@@ -69,9 +69,9 @@ IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"] = {
-    displayID = 240731,
-    ids = {240731, 239484, 260830, 246670},
+IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"] = {
+    displayID = 246670,
+    ids = {246670, 239484, 240731, 260830},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -96,14 +96,6 @@ IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"] = {
     zones = {},
     category = "CAT_LIGHT",
 }
-
-IMAGOdb.npcs.CAT_LIGHT["fiona"] = {
-    displayID = 243406,
-    ids = {243406, 246659},
-    zones = {},
-    category = "CAT_LIGHT",
-}
-
 
 IMAGOdb.npcs.CAT_LIGHT["lothraxion"] = {
     displayID = 249268,
@@ -133,7 +125,7 @@ IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"] = {
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"] = {
     displayID = 250589,
     ids = {250589, 249103, 240438, 246166, 248628, 246425, 247306, 243554, 244387, 246067, 249333, 247269, 246448},
     zones = {},
@@ -147,9 +139,9 @@ IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"] = {
-    displayID = 248629,
-    ids = {248629, 250587, 240431, 246165, 244386, 249331, 247303, 249101, 247270, 246076, 246424, 246449, 241395},
+IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"] = {
+    displayID = 250587,
+    ids = {250587, 240431, 246165, 248629, 244386, 247410, 249331, 247303, 249101, 247270, 246076, 246424, 246449, 241395},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -206,13 +198,6 @@ IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"] = {
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"] = {
     displayID = 247299,
     ids = {247299, 245186, 238072},
-    zones = {},
-    category = "CAT_LIGHT",
-}
-
-IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"] = {
-    displayID = 240464,
-    ids = {240464},
     zones = {},
     category = "CAT_LIGHT",
 }

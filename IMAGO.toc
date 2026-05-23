@@ -11,17 +11,23 @@ IMAGO.lua
 core/Locale.lua
 
 data/LoreSnippets_static.lua
-data/zones_static.lua
-data/npcs/CAT_QUELTHALAS.lua
-data/npcs/CAT_LIGHT.lua
-data/npcs/CAT_AMANI.lua
-data/npcs/CAT_HARATI.lua
-data/npcs/CAT_VOID.lua
-data/npcs/CAT_EBON_BLADE.lua
-data/npcs/CAT_NEUTRAL.lua
+data/midnight/zones_static.lua
+data/burning_crusade/zones_static.lua
+data/midnight/npcs/CAT_QUELTHALAS.lua
+data/midnight/npcs/CAT_LIGHT.lua
+data/midnight/npcs/CAT_AMANI.lua
+data/midnight/npcs/CAT_HARATI.lua
+data/midnight/npcs/CAT_VOID.lua
+data/midnight/npcs/CAT_EBON_BLADE.lua
+data/midnight/npcs/CAT_NEUTRAL.lua
 
-locales/base/data/npcs.lua
-locales/base/data/zones.lua
+data/burning_crusade/npcs/CAT_HORDE.lua
+data/burning_crusade/npcs/CAT_ALLIANCE.lua
+
+locales/base/data/midnight/npcs.lua
+locales/base/data/midnight/zones.lua
+locales/base/data/burning_crusade/npcs.lua
+locales/base/data/burning_crusade/zones.lua
 locales/base/data/snippets.lua
 locales/base/chronicle.lua
 
