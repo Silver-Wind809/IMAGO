@@ -258,15 +258,13 @@ function IMAGO.Scanner.ResolveTrackedZoneMapID(uiMapID)
 end
 
 function IMAGO.Scanner.CheckNPC()
-    -- Must be first — UnitExists itself can taint inside instances
-    if IsInInstance() then return end
-
     if not UnitExists("target") then 
         lastNPCID = nil
         return 
     end
 
     if InCombatLockdown() then return end
+    if IsInInstance() then return end
 
     local okGuid, guid = pcall(UnitGUID, "target")
     if not okGuid or not guid then return end

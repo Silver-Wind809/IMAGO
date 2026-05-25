@@ -51,17 +51,16 @@ function IMAGO.UnitContextMenu.Init()
     if not Menu or type(Menu.ModifyMenu) ~= "function" then return end
 
     Menu.ModifyMenu("MENU_UNIT_TARGET", function(_, rootDescription)
-        --if not IMAGOSaved or not IMAGOSaved.enabled then return end
-        --if not rootDescription or type(rootDescription.CreateButton) ~= "function" then return end
+        if not IMAGOSaved or not IMAGOSaved.enabled then return end
+        if IsInInstance() then return end
+        if not rootDescription or type(rootDescription.CreateButton) ~= "function" then return end
 
-        -- Do NOT call UnitGUID, UnitExists, UnitIsPlayer, or any Unit* functions here
-        -- Everything is deferred to the click handler to avoid tainting menu layout
-        --if rootDescription.CreateDivider then
-          --  rootDescription:CreateDivider()
-        --end
-        --rootDescription:CreateButton(IMAGO.L["CONTEXT_LORE_BTN"] or "IMAGO Lore", function()
-          --  IMAGO.UnitContextMenu.TryShowLoreForUnit("target")
-        --end)
+        if rootDescription.CreateDivider then
+            rootDescription:CreateDivider()
+        end
+        rootDescription:CreateButton(IMAGO.L["CONTEXT_LORE_BTN"] or "IMAGO Lore", function()
+            IMAGO.UnitContextMenu.TryShowLoreForUnit("target")
+        end)
     end)
 
     IMAGO.UnitContextMenu._registered = true
