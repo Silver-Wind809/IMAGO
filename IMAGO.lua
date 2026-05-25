@@ -71,23 +71,6 @@ end
 --- Baut den Reverse-Lookup (NPC-ID → Slug) für alle Kategorien auf.
 function IMAGO.BuildReverseLookup()
     if not IMAGOdb or not IMAGOdb.npcs then return end
-
-    IMAGOdb.nameToSlug = {}
-    for cat, entries in pairs(IMAGOdb.npcs) do
-        if type(entries) == "table" then
-            for slug, data in pairs(entries) do
-                if data.name and data.name ~= "" then
-                    IMAGOdb.nameToSlug[data.name:lower()] = slug
-                end
-                if data.aliases then
-                    for _, alias in ipairs(data.aliases) do
-                        IMAGOdb.nameToSlug[alias:lower()] = slug
-                    end
-                end
-            end
-        end
-    end
-
     IMAGOdb.idToSlug = {}
     for cat, entries in pairs(IMAGOdb.npcs) do
         if type(entries) == "table" then
@@ -263,8 +246,12 @@ function IMAGO.Scanner.CheckNPC()
         return 
     end
 
-    if InCombatLockdown() then return end
-    if IsInInstance() then return end
+    -- Während Combat Lockdown können Unit-GUIDs als „Secret Strings“ vorliegen;
+    -- jede String-Operation (z. B. strsplit) würde dann fehlschlagen. Lore-Popup
+    -- ist hier ohnehin nicht zuverlässig aktualisierbar.
+    if InCombatLockdown() then
+        return
+    end
 
     local okGuid, guid = pcall(UnitGUID, "target")
     if not okGuid or not guid then return end
@@ -579,7 +566,6 @@ function IMAGO.Init()
         TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Unit, function(tooltip, data)
             if not IMAGOSaved.enabled then return end
             if InCombatLockdown() then return end
-            if IsInInstance() then return end  -- add this
 
             securecall(function()
                 local guid = data and data.guid
