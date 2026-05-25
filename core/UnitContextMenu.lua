@@ -15,16 +15,24 @@ function IMAGO.UnitContextMenu.TryShowLoreForUnit(unit)
         return
     end
 
+    -- Try GUID first
+    local slug = nil
     local okGuid, guid = pcall(UnitGUID, unit)
-    if not okGuid or not guid then return end
-
-    local npcID, creatureType = IMAGO.GetNPCIDFromGUID(guid)
-    if not npcID then
-        print(IMAGO.L["CONTEXT_LORE_NONE"] or "|cFF888888IMAGO:|r Keine Lore für diesen NPC gefunden.")
-        return
+    if okGuid and guid then
+        local npcID = IMAGO.GetNPCIDFromGUID(guid)
+        if npcID then
+            slug = IMAGOdb.idToSlug and IMAGOdb.idToSlug[npcID]
+        end
     end
 
-    local slug = IMAGOdb.idToSlug[npcID]
+    -- Fall back to name for protected GUIDs
+    if not slug then
+        local okName, name = pcall(UnitName, unit)
+        if okName and name then
+            slug = IMAGOdb.nameToSlug and IMAGOdb.nameToSlug[name:lower()]
+        end
+    end
+
     if not slug or not IMAGO.GetNPCData(slug) then
         print(IMAGO.L["CONTEXT_LORE_NONE"] or "|cFF888888IMAGO:|r Keine Lore für diesen NPC gefunden.")
         return
@@ -43,19 +51,17 @@ function IMAGO.UnitContextMenu.Init()
     if not Menu or type(Menu.ModifyMenu) ~= "function" then return end
 
     Menu.ModifyMenu("MENU_UNIT_TARGET", function(_, rootDescription)
-        if not IMAGOSaved or not IMAGOSaved.enabled then return end
-        if not rootDescription or type(rootDescription.CreateButton) ~= "function" then return end
+        --if not IMAGOSaved or not IMAGOSaved.enabled then return end
+        --if not rootDescription or type(rootDescription.CreateButton) ~= "function" then return end
 
-        -- Immer dynamisches Ziel; vermeidet veraltete Tokens zwischen Menü öffnen und Klick.
-        local unit = "target"
-        if not UnitExists(unit) or UnitIsPlayer(unit) then return end
-
-        if rootDescription.CreateDivider then
-            rootDescription:CreateDivider()
-        end
-        rootDescription:CreateButton(IMAGO.L["CONTEXT_LORE_BTN"] or "IMAGO Lore", function()
-            IMAGO.UnitContextMenu.TryShowLoreForUnit(unit)
-        end)
+        -- Do NOT call UnitGUID, UnitExists, UnitIsPlayer, or any Unit* functions here
+        -- Everything is deferred to the click handler to avoid tainting menu layout
+        --if rootDescription.CreateDivider then
+          --  rootDescription:CreateDivider()
+        --end
+        --rootDescription:CreateButton(IMAGO.L["CONTEXT_LORE_BTN"] or "IMAGO Lore", function()
+          --  IMAGO.UnitContextMenu.TryShowLoreForUnit("target")
+        --end)
     end)
 
     IMAGO.UnitContextMenu._registered = true
