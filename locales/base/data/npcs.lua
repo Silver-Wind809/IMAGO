@@ -71,7 +71,11 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].name = "Grand Magister Rommath"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].lore = "Uncompromising and confrontational, the Grand Magister of Silvermoon is a man fiercely loyal to his people. As Kael'thas' staunchest supporter after the Third War, Rommath did whatever he thought was necessary to ensure the survival of the blood elves. Even if it meant using fel magic or torturing a Naaru for its holy power, Rommath was ready and willing. His loyalty was tested when Kael'thas allied himself with the Burning Legion; in the end, he chose his people over his former prince. Having been betrayed twice already – first by his former friend Dar'khan Drathir, and second by the Kirin Tor of Dalaran – Kael'thas' treachery hardened the elf's heart even further. With the Voidstorm encroaching on his homeland, Rommath will do what he has always done – protect Silvermoon at all costs, despite everything he and his people have endured."
+IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].lore = [[Uncompromising and confrontational, the Grand Magister of Silvermoon is a man fiercely loyal to his people. As Kael'thas' staunchest supporter after the Third War, Rommath did whatever he thought was necessary to ensure the survival of the blood elves. Even if it meant using fel magic or torturing a Naaru for its holy power, Rommath was ready and willing.
+
+His loyalty was tested when Kael'thas allied himself with the Burning Legion; in the end, he chose his people over his former prince. Having been betrayed twice already – first by his former friend Dar'khan Drathir, and second by the Kirin Tor of Dalaran – Kael'thas' treachery hardened the elf's heart even further.
+
+With the Voidstorm encroaching on his homeland, Rommath will do what he has always done – protect Silvermoon at all costs, despite everything he and his people have endured.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].zones = {"Eversong Woods", "Orgrimmar", "Twilight Highlands", "Silvermoon City"}
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].source = "Cadash & Austin - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].timeline = {
@@ -1988,6 +1992,98 @@ IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner"].name = "Sylvanas Windrunner"
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner"].race = "Darkfallen"
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner"].lore = [[Sylvanas Windrunner fought and died for Silvermoon as Ranger-General, but her heroic sacrifice is not what she made her legacy. 
+
+Resurrected as the Banshee Queen, her soul torn in half, she soon rose to power in the Horde and made a pact with the Jailer in the Shadowlands. Bitter and saddened over the suffering inflicted on her and her loved ones, and faced with the prospect of eternal torment, she began a bloody war on Azeroth to shatter the cycle of life and death. 
+
+It took a betrayal and the reclamation of the other part of her soul for her to fully grasp the horrors she had committed. She is now bound to the Maw, the place of suffering she condemned her victims to, to fulfill her penance. While helping the trapped souls find respite, she can no longer shake the feeling that something about the Shadowlands is deeply wrong.]]
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner"].zones = {"Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Lived in Windrunner Spire with her family and trained as a ranger with her friends, Lor'themar and Halduron. Against protests from even Prince Kael'thas, she elevated the human archer Nathanos Marris to the rank of Ranger-Lord of the Farstriders and began a romantic relationship with him.]],
+    },
+    {
+        era = "WC2",
+        text = [[Took up the mantle of Ranger-General of Quel'Thalas when her mother, Lireesa, was killed by Amani trolls. Successfully defended Quel'Thalas against the Old Horde with help from the Alliance of Lordaeron, but lost her younger brother, Lirath, in the attack. Inaugurated Alleria's statue in Stormwind City when her older sister vanished beyond the Dark Portal.]],
+    },
+    {
+        era = "WC3",
+        text = [[Failed to stop the Scourge and was slain by Arthas Menethil. Was raised as a banshee by her killer and was forced to aid in the destruction of her homeland. Regained free will when the Lich King grew weaker and almost managed to kill Arthas. Stayed in ruined Lordaeron and became the ruler of the freed undead, now called Forsaken. Conquered the Undercity.]],
+    },
+    {
+        era = "Pre-Classic",
+        text = [[Attempted to ally with the Alliance and Quel'Thalas, but was left disillusioned when her messengers were killed on sight repeatedly. Realizing her former kin and allies saw the Forsaken as monsters, she made contact with the Horde and officially joined the faction when they proved less narrow-minded.]],
+    },
+    {
+        era = "Classic",
+        text = [[Firmly established her hold over Lordaeron and drove back the Scarlet Crusade from her new kingdom. As the Banshee Queen, she freed more undead from the Lich King's control, and ordered her apothecaries to devise a new kind of plague that would be capable of killing the living as well as the dead.]],
+    },
+    {
+        era = "TBC",
+        text = [[Helped the Scourge-besieged blood elves in Quel'Thalas and offered them a place in the Horde. Was taken aback when an adventurer delivered her old necklace to her and was briefly overcome by a horrible sadness thinking about her former life and her family.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[When Arthas overtook Ner'zhul as the dominant Lich King, Sylvanas felt the old connection flicker back to life and met with the other leaders of the Horde in Orgrimmar. Defended the capital when the Lich King's forces attacked. Threatened to withdraw support from Quel'Thalas if the blood elves wouldn't join the war in Northrend, forcing Lor'themar to do her bidding.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Was betrayed by Varimathras and Putress and had to retake the Undercity from the usurpers with Warchief Thrall's support. Fought against the Scourge and Arthas personally in Northrend, hell-bent on revenge. Couldn't defeat her tormentor and did not witness his eventual defeat.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[With Arthas' death, Sylvanas felt no more reason to continue her undead existence. She threw herself from Icecrown Citadel and was brought into the Maw, and found herself before the Jailer of the damned. Made a pact with him after witnessing the fate awaiting her in death, and was brought back to life and given the Val'kyr to serve her.]],
+    },
+    {
+        era = "Cata",
+        text = [[Conquered Gilneas and killed Prince Liam Greymane. Was killed by Vincent Godfrey but revived through the sacrifice of one of her Val'kyr. Later won the Battle for Andorhal and started taking over the Arathi Highlands.]],
+    },
+    {
+        era = "MoP",
+        text = [[Joined Vol'jin's rebellion against Garrosh Hellscream and seized Bladefist Bay alongside the blood elves during the Siege of Orgrimmar.]],
+    },
+    {
+        era = "Pre-WoD",
+        text = [[Reconnected with her sister, Vereesa, and both formulated a plan to kill Garrosh. Sylvanas planned to raise Vereesa into undeath to be together as a family again, but when her sister abandoned the assassination plot in regret, Sylvanas remained alone.]],
+    },
+    {
+        era = "Pre-Legion",
+        text = [[Seeing Nathanos' body decay over time, she ordered him to kill his cousin and undertake a ritual to gain his strength. She didn't understand why she wasted precious resources doing so, as she couldn't feel love anymore.]],
+    },
+    {
+        era = "Legion",
+        text = [[Fought on the Broken Shore and made the decision to recall Horde troops when the Burning Legion overwhelmed them, thus leaving King Varian to die. Became Warchief of the Horde upon Vol'jin's death. Tried to enslave Odyn's Val'kyr to raise new Forsaken, but was stopped by a vengeful Genn Greymane.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Tried to reconnect with her sisters but ended up fighting with them. Agreed to host the Gathering with King Anduin Wrynn, allowing her subjects to meet their living relatives. When some Forsaken defected, Sylvanas ordered both the humans and her fleeing subjects shot. She then started the Fourth War by invading Darkshore, burning down Teldrassil, and committing night elf genocide.]],
+    },
+    {
+        era = "BfA",
+        text = [[Blighted the Undercity when it was besieged by the Alliance in retaliation for Teldrassil. Allied with the Zandalari. Branded Baine Bloodhoof a traitor after he disagreed with her destructive leadership and was challenged to Mak'gora by Varok Saurfang. She won, but admitted that the Fourth War was merely the first step of a greater plan. She escaped, leaving a shattered Horde behind.]]
+    },
+    {
+        era = "SL",
+        text = [[Opened the veil between Azeroth and the Shadowlands. Worked with the Jailer to break the cycle of life and death and helped enslave Anduin Wrynn. Turned on Zovaal, regained her soul, and was horrified by what she had become in undeath. Helped defeat the Jailer, free Anduin and submitted to the judgment of Tyrande Whisperwind. Was sent to the Maw to serve her penance.]]
+    },
+    {
+        era = "DF",
+        text = [[Sent a message to her still-loyal followers in the Horde, expressing regret for the suffering she had caused.]],
+    },
+    {
+        era = "TWW",
+        text = [[Refused to accompany Arator to defend Quel'Thalas, as her penance in the Maw was not yet complete. Started to suspect that something was wrong with the Shadowlands.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Came to the aid of Silvermoon's defenders and prevented Xal'atath from killing Arator and Vereesa. Returned to the Maw briefly after. ]]
+    }
+}
+
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].race = "Human"
@@ -2322,7 +2418,7 @@ IMAGOdb.npcs.CAT_VOID["xal_atath"].timeline = {
         text = [[Destroyed Dalaran and crippled Khadgar for life. Began her mission to empower the Dark Heart with various cosmic energies. Alleria pursued her relentlessly and managed to damage the Dark Heart. Xal'atath allied with Gallywix and left him for dead after he gave the Dark Heart to the Shadowguard ethereals. Allied with Alleria to stop Dimensius' return and took his power for herself.]],
     },
     {
-        era = "Pre-Midnight",
+        era = "Pre-MN",
         text = [[With the powers of a Void Lord, she united the ever-warring forces of the Void under her command, including Nexus-King Salhadaar and the domanaar. Drained the Dark Heart to create the Voidspire and bring the Voidstorm to the skies above Silvermoon.]],
     },
     {
