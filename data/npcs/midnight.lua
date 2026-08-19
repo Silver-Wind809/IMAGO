@@ -734,6 +734,13 @@ IMAGOdb.npcs.CAT_NEUTRAL["wardruid_loti_midnight"] = {
     category = "CAT_NEUTRAL",
 }
 
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner_midnight"] = {
+    displayID = 257553,
+    ids = {257553},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
 -- === CAT_ARCANTINA ===
 
 IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"] = {

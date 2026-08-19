@@ -8,5 +8,6 @@ IMAGOdb.questToSlug = IMAGOdb.questToSlug or {}
 IMAGOdb.questToSlug = {
     [88719] = "xal_atath_midnight",
     [91406] = "shadra_midnight",
-    [86542] = "l_ura_midnight"
+    [86542] = "l_ura_midnight",
+    [88710] = "sylvanas_midnight"
 }

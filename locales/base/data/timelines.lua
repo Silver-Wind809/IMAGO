@@ -32,6 +32,80 @@ IMAGOdb.timelines.ANDUIN_WRYNN = {
 }
 
 -- ============================================================
+-- SYLVANAS WINDRUNNER
+-- ============================================================
+IMAGOdb.timelines.SYLVANAS_WINDRUNNER = {
+    {
+        era = "Pre-WC2",
+        text = [[Lived in Windrunner Spire with her family and trained as a ranger with her friends, Lor'themar and Halduron. Against protests from even Prince Kael'thas, she elevated the human archer Nathanos Marris to the rank of Ranger-Lord of the Farstriders and began a romantic relationship with him.]],
+    },
+    {
+        era = "WC2",
+        text = [[Took up the mantle of Ranger-General of Quel'Thalas when her mother, Lireesa, was killed by Amani trolls. Successfully defended Quel'Thalas against the Old Horde with help from the Alliance of Lordaeron, but lost her younger brother, Lirath, in the attack. Inaugurated Alleria's statue in Stormwind City when her older sister vanished beyond the Dark Portal.]],
+    },
+    {
+        era = "WC3",
+        text = [[Failed to stop the Scourge and was slain by Arthas Menethil. Was raised as a banshee by her killer and was forced to aid in the destruction of her homeland. Regained free will when the Lich King grew weaker and almost managed to kill Arthas. Stayed in ruined Lordaeron and became the ruler of the freed undead, now called Forsaken. Conquered the Undercity.]],
+    },
+    {
+        era = "Pre-Classic",
+        text = [[Attempted to ally with the Alliance and Quel'Thalas, but was left disillusioned when her messengers were killed on sight repeatedly. Realizing her former kin and allies saw the Forsaken as monsters, she made contact with the Horde and officially joined the faction when they proved less narrow-minded.]],
+    },
+    {
+        era = "Classic",
+        text = [[Firmly established her hold over Lordaeron and drove back the Scarlet Crusade from her new kingdom. As the Banshee Queen, she freed more undead from the Lich King's control, and ordered her apothecaries to devise a new kind of plague that would be capable of killing the living as well as the dead.]],
+    },
+    {
+        era = "TBC",
+        text = [[Helped the Scourge-besieged blood elves in Quel'Thalas and offered them a place in the Horde. Was taken aback when an adventurer delivered her old necklace to her and was briefly overcome by a horrible sadness thinking about her former life and her family.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[When Arthas overtook Ner'zhul as the dominant Lich King, Sylvanas felt the old connection flicker back to life and met with the other leaders of the Horde in Orgrimmar. Defended the capital when the Lich King's forces attacked. Threatened to withdraw support from Quel'Thalas if the blood elves wouldn't join the war in Northrend, forcing Lor'themar to do her bidding.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Was betrayed by Varimathras and Putress and had to retake the Undercity from the usurpers with Warchief Thrall's support. Fought against the Scourge and Arthas personally in Northrend, hell-bent on revenge. Couldn't defeat her tormentor and did not witness his eventual defeat.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[With Arthas' death, Sylvanas felt no more reason to continue her undead existence. She threw herself from Icecrown Citadel and was brought into the Maw, and found herself before the Jailer of the damned. Made a pact with him after witnessing the fate awaiting her in death, and was brought back to life and given the Val'kyr to serve her.]],
+    },
+    {
+        era = "Cata",
+        text = [[Conquered Gilneas and killed Prince Liam Greymane. Was killed by Vincent Godfrey but revived through the sacrifice of one of her Val'kyr. Later won the Battle for Andorhal and started taking over the Arathi Highlands.]],
+    },
+    {
+        era = "MoP",
+        text = [[Joined Vol'jin's rebellion against Garrosh Hellscream and seized Bladefist Bay alongside the blood elves during the Siege of Orgrimmar.]],
+    },
+    {
+        era = "Pre-WoD",
+        text = [[Reconnected with her sister, Vereesa, and both formulated a plan to kill Garrosh. Sylvanas planned to raise Vereesa into undeath to be together as a family again, but when her sister abandoned the assassination plot in regret, Sylvanas remained alone.]],
+    },
+    {
+        era = "Pre-Legion",
+        text = [[Seeing Nathanos' body decay over time, she ordered him to kill his cousin and undertake a ritual to gain his strength. She didn't understand why she wasted precious resources doing so, as she couldn't feel love anymore.]],
+    },
+    {
+        era = "Legion",
+        text = [[Fought on the Broken Shore and made the decision to recall Horde troops when the Burning Legion overwhelmed them, thus leaving King Varian to die. Became Warchief of the Horde upon Vol'jin's death. Tried to enslave Odyn's Val'kyr to raise new Forsaken, but was stopped by a vengeful Genn Greymane.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Tried to reconnect with her sisters but ended up fighting with them. Agreed to host the Gathering with King Anduin Wrynn, allowing her subjects to meet their living relatives. When some Forsaken defected, Sylvanas ordered both the humans and her fleeing subjects shot. She then started the Fourth War by invading Darkshore, burning down Teldrassil, and committing night elf genocide.]],
+    },
+    {
+        era = "DF",
+        text = [[Sent a message to her still-loyal followers in the Horde, expressing regret for the suffering she had caused.]],
+    },
+    {
+        era = "TWW",
+        text = [[Refused to accompany Arator to defend Quel'Thalas, as her penance in the Maw was not yet complete. Started to suspect that something was wrong with the Shadowlands.]],
+    }
+}
+
+-- ============================================================
 -- FAERIN LOTHAR
 -- ============================================================
 IMAGOdb.timelines.FAERIN_LOTHAR = {
@@ -2623,3 +2697,4 @@ IMAGOdb.timelines.KHADGAR = {
 IMAGOdb.timelines.MAGNI_BRONZEBEARD = {
     {era = "TWW", text = [[Worked alongside the earthen of Dornogal to combat Xal'atath's forces. With his grandson Dagran uncovered the High Speaker's treachery in the Ringing Deeps. Was restored to flesh by Azeroth. Tried his hardest to reconnect with his daughter Moira and was accepted back by his family.]]},
 }
+
