@@ -859,7 +859,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.hintPage.aura = f.hintPage:CreateTexture(nil, "BACKGROUND")
     f.hintPage.aura:SetSize(300, 300) -- Slightly larger than the original
     f.hintPage.aura:SetPoint("CENTER", f.hintPage.centerAnchor, "CENTER", 0, 0)
-    f.hintPage.aura:SetTexture("Interface\\AddOns\\IMAGO\\Media\\undiscovered.tga") 
+    f.hintPage.aura:SetTexture("Interface\\AddOns\\IMAGO\\Media\\Zones\\undiscovered.tga") 
     f.hintPage.aura:SetVertexColor(IMAGO_COLORS.GOLD[1], IMAGO_COLORS.GOLD[2], IMAGO_COLORS.GOLD[3]) -- Magic gold
 
     local agAura = f.hintPage.aura:CreateAnimationGroup()
@@ -882,7 +882,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.hintPage.icon = f.hintPage:CreateTexture(nil, "ARTWORK")
     f.hintPage.icon:SetSize(250, 250) 
     f.hintPage.icon:SetPoint("CENTER", f.hintPage.centerAnchor, "CENTER", 0, 0)
-    f.hintPage.icon:SetTexture("Interface\\AddOns\\IMAGO\\Media\\undiscovered.tga")
+    f.hintPage.icon:SetTexture("Interface\\AddOns\\IMAGO\\Media\\Zones\\undiscovered.tga")
     -- Reduces opacity to 75% for a more ghostly look
     f.hintPage.icon:SetAlpha(0.4)
 
@@ -1330,8 +1330,8 @@ function IMAGO.Chronicle.CreateFrame()
             })
             tile:SetBackdropColor(0.07, 0.06, 0.08, 0.97)
             tile:SetBackdropBorderColor(
-                hasData and 0.45 or 0.20, hasData and 0.38 or 0.16,
-                hasData and 0.18 or 0.08, hasData and 0.70 or 0.28)
+                hasData and 0.45 or 0.28, hasData and 0.38 or 0.22,
+                hasData and 0.18 or 0.11, hasData and 0.70 or 0.45)
 
             tile.bgTex = tile:CreateTexture(nil, "BORDER")
             tile.bgTex:SetPoint("TOPLEFT",     tile, "TOPLEFT",     3, -3)
@@ -1339,8 +1339,10 @@ function IMAGO.Chronicle.CreateFrame()
             local bgP = era.data.bgPath or ""
             if bgP ~= "" then
                 tile.bgTex:SetTexture(bgP)
-                tile.bgTex:SetTexCoord(0, 1, 0.14, 0.86)  -- undistorted center-crop for 1920x1080 on 330x134
-                tile.bgTex:SetAlpha(hasData and 0.48 or 0.08)
+                tile.bgTex:SetTexCoord(0, 1, 0, 1)  -- bg files are pre-cropped to the 330x134 band
+                tile.bgTex:SetAlpha(hasData and 0.48 or 0.30)
+            else
+                tile.bgTex:SetAlpha(0)
             end
 
             tile.overlay = tile:CreateTexture(nil, "ARTWORK")
@@ -1348,16 +1350,21 @@ function IMAGO.Chronicle.CreateFrame()
             tile.overlay:SetPoint("BOTTOMRIGHT", tile, "BOTTOMRIGHT", -3,  3)
             tile.overlay:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
             tile.overlay:SetGradient("VERTICAL",
-                CreateColor(0,0,0, hasData and 0.48 or 0.80),
-                CreateColor(0,0,0, hasData and 0.18 or 0.60))
+                CreateColor(0,0,0, hasData and 0.48 or 0.62),
+                CreateColor(0,0,0, hasData and 0.18 or 0.40))
 
             local logoP = era.data.logoPath or ""
             if logoP ~= "" then
                 tile.logo = tile:CreateTexture(nil, "ARTWORK")
-                tile.logo:SetSize(115, 90)               -- natural aspect ratio (1280:1000)
+                if era.data.logo_w and era.data.logo_h then
+                    local s = math.min(130 / era.data.logo_w, 95 / era.data.logo_h)
+                    tile.logo:SetSize(era.data.logo_w * s, era.data.logo_h * s)
+                else
+                    tile.logo:SetSize(115, 90)               -- natural aspect ratio (1280:1000)
+                end
                 tile.logo:SetPoint("CENTER", tile, "CENTER", 0, 12)  -- centered, shifted up for text
                 tile.logo:SetTexture(logoP)
-                tile.logo:SetAlpha(hasData and 0.95 or 0.18)
+                tile.logo:SetAlpha(hasData and 0.95 or 0.55)
             end
 
             tile.nameLabel = tile:CreateFontString(nil, "OVERLAY")
@@ -1391,7 +1398,7 @@ function IMAGO.Chronicle.CreateFrame()
             tile.eraSlug   = era.slug
             tile.expSuffix = sfx
             tile.hasData   = hasData
-            tile._bgAlpha  = hasData and 0.48 or 0.08
+            tile._bgAlpha  = hasData and 0.48 or 0.30
 
             if hasData then
                 tile:SetScript("OnEnter", function(self)
@@ -1455,6 +1462,190 @@ function IMAGO.Chronicle.CreateFrame()
         end
     end  -- do
 
+    -- ============================================================
+    -- ZONES: EXPANSION GRID (same tile design as the Fates picker)
+    -- ============================================================
+    f.zonesExpansionGrid = CreateFrame("Frame", nil, f)
+    f.zonesExpansionGrid:SetPoint("TOPLEFT",     f, "TOPLEFT",      8, -50)
+    f.zonesExpansionGrid:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -8,  15)
+    f.zonesExpansionGrid:Hide()
+
+    f.zonesExpansionGrid.bg = f.zonesExpansionGrid:CreateTexture(nil, "BACKGROUND")
+    f.zonesExpansionGrid.bg:SetAllPoints()
+    f.zonesExpansionGrid.bg:SetColorTexture(IMAGO_COLORS.BG_MAIN[1], IMAGO_COLORS.BG_MAIN[2], IMAGO_COLORS.BG_MAIN[3], 0.94)
+
+    f.zonesExpansionGrid.titleLabel = f.zonesExpansionGrid:CreateFontString(nil, "OVERLAY")
+    f.zonesExpansionGrid.titleLabel:SetFont(FONT_TITLE, 17, "OUTLINE")
+    f.zonesExpansionGrid.titleLabel:SetPoint("TOP", f.zonesExpansionGrid, "TOP", 0, -13)
+    f.zonesExpansionGrid.titleLabel:SetTextColor(IMAGO_COLORS.GOLD_MUTED[1], IMAGO_COLORS.GOLD_MUTED[2], IMAGO_COLORS.GOLD_MUTED[3])
+    f.zonesExpansionGrid.titleLabel:SetText(IMAGO.L["FATES_CHOOSE_EXP"] or "Choose an Expansion")
+
+    f.zonesExpansionGrid.divLine = f.zonesExpansionGrid:CreateTexture(nil, "ARTWORK")
+    f.zonesExpansionGrid.divLine:SetSize(420, 1)
+    f.zonesExpansionGrid.divLine:SetPoint("TOP", f.zonesExpansionGrid.titleLabel, "BOTTOM", 0, -5)
+    f.zonesExpansionGrid.divLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+    f.zonesExpansionGrid.divLine:SetGradient("HORIZONTAL",
+        CreateColor(IMAGO_COLORS.GOLD_BRIGHT[1], IMAGO_COLORS.GOLD_BRIGHT[2], IMAGO_COLORS.GOLD_BRIGHT[3], 0), CreateColor(IMAGO_COLORS.GOLD_BRIGHT[1], IMAGO_COLORS.GOLD_BRIGHT[2], IMAGO_COLORS.GOLD_BRIGHT[3], 0.3))
+
+    do
+        local TILE_W, TILE_H = 330, 134
+        local HGAP,  VGAP   = 12,  10
+        local COLS           = 3
+        local GRID_L, GRID_T = 35, -60
+
+        local sortedEras = {}
+        for slug, data in pairs(IMAGOdb.eras or {}) do
+            table.insert(sortedEras, { slug=slug, data=data })
+        end
+        table.sort(sortedEras, function(a,b)
+            return (a.data.order or 99) < (b.data.order or 99)
+        end)
+
+        f.zonesExpansionGrid.tiles = {}
+
+        for i, era in ipairs(sortedEras) do
+            local col = (i-1) % COLS
+            local row = math.floor((i-1) / COLS)
+            local tx  = GRID_L + col*(TILE_W+HGAP)
+            local ty  = GRID_T - row*(TILE_H+VGAP)
+            local hasData = false
+            for _, zdata in pairs(IMAGOdb.zones or {}) do
+                if zdata.expansion == era.slug then hasData = true; break end
+            end
+
+            local tile = CreateFrame("Button", nil, f.zonesExpansionGrid, "BackdropTemplate")
+            tile:SetSize(TILE_W, TILE_H)
+            tile:SetPoint("TOPLEFT", f.zonesExpansionGrid, "TOPLEFT", tx, ty)
+            tile:SetBackdrop({
+                bgFile="Interface\\Tooltips\\UI-Tooltip-Background",
+                edgeFile="Interface\\Tooltips\\UI-Tooltip-Border",
+                edgeSize=12, insets={left=3,right=3,top=3,bottom=3},
+            })
+            tile:SetBackdropColor(0.07, 0.06, 0.08, 0.97)
+            tile:SetBackdropBorderColor(
+                hasData and 0.45 or 0.28, hasData and 0.38 or 0.22,
+                hasData and 0.18 or 0.11, hasData and 0.70 or 0.45)
+
+            tile.bgTex = tile:CreateTexture(nil, "BORDER")
+            tile.bgTex:SetPoint("TOPLEFT",     tile, "TOPLEFT",     3, -3)
+            tile.bgTex:SetPoint("BOTTOMRIGHT", tile, "BOTTOMRIGHT", -3,  3)
+            local bgP = era.data.bgPath or ""
+            if bgP ~= "" then
+                tile.bgTex:SetTexture(bgP)
+                tile.bgTex:SetTexCoord(0, 1, 0, 1)  -- bg files are pre-cropped to the 330x134 band
+                tile.bgTex:SetAlpha(hasData and 0.48 or 0.30)
+            else
+                tile.bgTex:SetAlpha(0)
+            end
+
+            tile.overlay = tile:CreateTexture(nil, "ARTWORK")
+            tile.overlay:SetPoint("TOPLEFT",     tile, "TOPLEFT",     3, -3)
+            tile.overlay:SetPoint("BOTTOMRIGHT", tile, "BOTTOMRIGHT", -3,  3)
+            tile.overlay:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+            tile.overlay:SetGradient("VERTICAL",
+                CreateColor(0,0,0, hasData and 0.48 or 0.62),
+                CreateColor(0,0,0, hasData and 0.18 or 0.40))
+
+            local logoP = era.data.logoPath or ""
+            if logoP ~= "" then
+                tile.logo = tile:CreateTexture(nil, "ARTWORK")
+                if era.data.logo_w and era.data.logo_h then
+                    local s = math.min(130 / era.data.logo_w, 95 / era.data.logo_h)
+                    tile.logo:SetSize(era.data.logo_w * s, era.data.logo_h * s)
+                else
+                    tile.logo:SetSize(115, 90)
+                end
+                tile.logo:SetPoint("CENTER", tile, "CENTER", 0, 12)
+                tile.logo:SetTexture(logoP)
+                tile.logo:SetAlpha(hasData and 0.95 or 0.55)
+            end
+
+            tile.nameLabel = tile:CreateFontString(nil, "OVERLAY")
+            tile.nameLabel:SetFont(FONT_BODY, 11, "")
+            tile.nameLabel:SetPoint("BOTTOM", tile, "BOTTOM", 0, 28)
+            tile.nameLabel:SetWidth(TILE_W - 14)
+            tile.nameLabel:SetJustifyH("CENTER")
+            tile.nameLabel:SetWordWrap(false)
+            local rawNm = era.data.name or era.slug
+            local nm    = rawNm:gsub("^[Ww]orld of [Ww]arcraft:?%s*", "")
+            if nm == "" then nm = era.slug:gsub("_", " ") end
+            tile.nameLabel:SetText(nm)
+            if hasData then
+                tile.nameLabel:SetTextColor(IMAGO_COLORS.GOLD_BRIGHT[1], IMAGO_COLORS.GOLD_BRIGHT[2], IMAGO_COLORS.GOLD_BRIGHT[3])
+            else
+                tile.nameLabel:SetTextColor(IMAGO_COLORS.TEXT_MUTED[1], IMAGO_COLORS.TEXT_MUTED[2], IMAGO_COLORS.TEXT_MUTED[3])
+            end
+
+            tile.subLabel = tile:CreateFontString(nil, "OVERLAY")
+            tile.subLabel:SetFont(FONT_BODY, 10)
+            tile.subLabel:SetPoint("BOTTOM", tile, "BOTTOM", 0, 11)
+            tile.subLabel:SetWidth(TILE_W - 14)
+            tile.subLabel:SetJustifyH("CENTER")
+            if hasData then
+                tile.subLabel:SetTextColor(IMAGO_COLORS.GOLD_MUTED[1], IMAGO_COLORS.GOLD_MUTED[2], IMAGO_COLORS.GOLD_MUTED[3])
+            else
+                tile.subLabel:SetText(IMAGO.L["COMING_SOON_SHORT"] or "Coming Soon")
+                tile.subLabel:SetTextColor(IMAGO_COLORS.TEXT_MUTED[1], IMAGO_COLORS.TEXT_MUTED[2], IMAGO_COLORS.TEXT_MUTED[3])
+            end
+
+            tile.eraSlug  = era.slug
+            tile.hasData  = hasData
+            tile._bgAlpha = hasData and 0.48 or 0.30
+
+            if hasData then
+                tile:SetScript("OnEnter", function(self)
+                    self:SetBackdropBorderColor(IMAGO_COLORS.GOLD[1], IMAGO_COLORS.GOLD[2], IMAGO_COLORS.GOLD[3], 1.0)
+                    self.bgTex:SetAlpha(0.62)
+                    self.overlay:SetGradient("VERTICAL",
+                        CreateColor(0,0,0,0.30), CreateColor(0,0,0,0.10))
+                end)
+                tile:SetScript("OnLeave", function(self)
+                    self:SetBackdropBorderColor(IMAGO_COLORS.BORDER[1], IMAGO_COLORS.BORDER[2], IMAGO_COLORS.BORDER[3], 0.70)
+                    self.bgTex:SetAlpha(self._bgAlpha)
+                    self.overlay:SetGradient("VERTICAL",
+                        CreateColor(0,0,0,0.48), CreateColor(0,0,0,0.18))
+                end)
+                tile:SetScript("OnClick", function(self)
+                    if SOUNDKIT and SOUNDKIT.IG_CHARACTER_INFO_TAB then
+                        PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB)
+                    end
+                    f.activeZoneExpansion = self.eraSlug
+                    f.zonesExpansionGrid:Hide()
+                    f.sidebar:Show(); f.detailFrame:Show()
+                    if f.sidebar.zonesHeader then f.sidebar.zonesHeader:Show() end
+                    if f.expansionBackBtn then
+                        f.expansionBackBtn:Show()
+                    end
+                    IMAGO.Chronicle.UpdateList()
+                    if f.ShowDashboard then f.ShowDashboard() end
+                end)
+            else
+                tile:EnableMouse(false)
+            end
+            table.insert(f.zonesExpansionGrid.tiles, tile)
+        end
+
+        f.zonesExpansionGrid.RefreshCounts = function()
+            IMAGOSaved.seenZones = IMAGOSaved.seenZones or {}
+            for _, tile in ipairs(f.zonesExpansionGrid.tiles) do
+                if tile.hasData then
+                    local tot, sn = 0, 0
+                    for mapID, zdata in pairs(IMAGOdb.zones or {}) do
+                        if zdata.expansion == tile.eraSlug then
+                            tot = tot + 1
+                            if IMAGOSaved.seenZones[mapID] then sn = sn + 1 end
+                        end
+                    end
+                    tile.subLabel:SetText(string.format("%d / %d", sn, tot))
+                    tile.subLabel:SetTextColor(
+                        sn == tot and 0.80 or 0.55,
+                        sn == tot and 0.75 or 0.50,
+                        0.28)
+                end
+            end
+        end
+    end  -- do
+
     f.expansionBackBtn = CreateFrame("Button", nil, f, "BackdropTemplate")
     f.expansionBackBtn:SetSize(95, 20)
     f.expansionBackBtn:SetPoint("LEFT", f.settingsBtn, "RIGHT", 8, 0)
@@ -1479,15 +1670,21 @@ function IMAGO.Chronicle.CreateFrame()
     end)
     f.expansionBackBtn:SetScript("OnClick", function()
         if SOUNDKIT and SOUNDKIT.IG_MAINMENU_OPTION then PlaySound(SOUNDKIT.IG_MAINMENU_OPTION) end
-        f.activeExpansion = nil
-        f.activeFilter    = "ALL"
-        if f.filterBtn then f.filterBtn:SetText(IMAGO.L["FILTER_ALL"] or "All") end
         f.expansionBackBtn:Hide()
         f.searchBox:Hide(); f.filterBtn:Hide()
         f.sidebar:Hide(); f.detailFrame:Hide()
         if f.sidebar.zonesHeader then f.sidebar.zonesHeader:Hide() end
-        f.expansionGrid.RefreshCounts()
-        f.expansionGrid:Show()
+        if f.activeTabIndex == 2 then
+            f.activeZoneExpansion = nil
+            f.zonesExpansionGrid.RefreshCounts()
+            f.zonesExpansionGrid:Show()
+        else
+            f.activeExpansion = nil
+            f.activeFilter    = "ALL"
+            if f.filterBtn then f.filterBtn:SetText(IMAGO.L["FILTER_ALL"] or "All") end
+            f.expansionGrid.RefreshCounts()
+            f.expansionGrid:Show()
+        end
     end)
 
     function IMAGO.Chronicle.ShowExpansionGrid()
@@ -1503,6 +1700,20 @@ function IMAGO.Chronicle.CreateFrame()
         if fr.expansionGrid then
             fr.expansionGrid.RefreshCounts()
             fr.expansionGrid:Show()
+        end
+    end
+
+    function IMAGO.Chronicle.ShowZoneExpansionGrid()
+        local fr = IMAGO.Chronicle.frame
+        if not fr then return end
+        fr.activeZoneExpansion = nil
+        fr.searchBox:Hide(); fr.filterBtn:Hide()
+        fr.sidebar:Hide(); fr.detailFrame:Hide()
+        if fr.sidebar.zonesHeader then fr.sidebar.zonesHeader:Hide() end
+        if fr.expansionBackBtn then fr.expansionBackBtn:Hide() end
+        if fr.zonesExpansionGrid then
+            fr.zonesExpansionGrid.RefreshCounts()
+            fr.zonesExpansionGrid:Show()
         end
     end
 
@@ -1534,31 +1745,37 @@ function IMAGO.Chronicle.CreateFrame()
         if f.creditsPage then f.creditsPage:Hide() end
         if f.creditsHeader then f.creditsHeader:Hide() end
         IMAGO.Chronicle.SetDetailAction(nil)
-        if f.expansionGrid    then f.expansionGrid:Hide()    end
-        if f.expansionBackBtn then f.expansionBackBtn:Hide() end
-        if f.filterMenu       then f.filterMenu:Hide()       end
-        
+        if f.expansionGrid      then f.expansionGrid:Hide()      end
+        if f.zonesExpansionGrid then f.zonesExpansionGrid:Hide() end
+        if f.expansionBackBtn   then f.expansionBackBtn:Hide()   end
+        if f.filterMenu         then f.filterMenu:Hide()         end
+
         if index == 1 or index == 2 then
             f.comingSoonPage:Hide()
             if IMAGO.Eras and IMAGO.Eras.frame then
                 IMAGO.Eras.frame.wrapper:Hide()
                 IMAGO.Eras.ClearHistory()
             end
-            if index == 1 and not f.activeExpansion then
-                -- Fates: show expansion grid
+            local showGrid = (index == 1 and not f.activeExpansion)
+                          or (index == 2 and not f.activeZoneExpansion)
+            if showGrid then
+                -- Fates/Zones: show expansion picker
                 f.searchBox:Hide(); f.filterBtn:Hide()
                 f.sidebar:Hide(); f.detailFrame:Hide()
                 if f.sidebar.zonesHeader then f.sidebar.zonesHeader:Hide() end
-                if f.expansionGrid then
+                if index == 1 and f.expansionGrid then
                     f.expansionGrid.RefreshCounts()
                     f.expansionGrid:Show()
+                elseif index == 2 and f.zonesExpansionGrid then
+                    f.zonesExpansionGrid.RefreshCounts()
+                    f.zonesExpansionGrid:Show()
                 end
                 IMAGO.Chronicle.UpdateList()  -- Update footer
             else
-                -- Tab 1 with expansion or tab 2 (zones)
+                -- Tab 1 or tab 2 with a selected expansion
                 f.searchBox:SetShown(index == 1)
                 f.filterBtn:SetShown(index == 1)
-                if index == 1 and f.expansionBackBtn then f.expansionBackBtn:Show() end
+                if f.expansionBackBtn then f.expansionBackBtn:Show() end
                 f.sidebar:Show(); f.detailFrame:Show()
                 if f.sidebar.zonesHeader then f.sidebar.zonesHeader:SetShown(index == 2) end
                 IMAGO.Chronicle.UpdateList()
@@ -2542,7 +2759,7 @@ function IMAGO.Chronicle.UpdateList()
                             IMAGO.Chronicle.SetDetailAction(nil)
                             f.hintPage.aura:Show() -- THIS IS WHERE IT GETS RE-ENABLED!
                             f.hintPage.warning:SetText(IMAGO.L["HINT_IDENTITY_HIDDEN"] or "IDENTITÄT VERBORGEN")
-                            f.hintPage.icon:SetTexture("Interface\\AddOns\\IMAGO\\Media\\undiscovered.tga")
+                            f.hintPage.icon:SetTexture("Interface\\AddOns\\IMAGO\\Media\\Zones\\undiscovered.tga")
                             f.hintPage.icon:SetTexCoord(0, 1, 0, 1)
                             
                             f.detailTitle:SetText(GetCrypticName(name))
@@ -2592,9 +2809,11 @@ function IMAGO.Chronicle.UpdateList()
         local zIdx = 1
         local totalZones, seenZones = 0, 0
 
-        for mapID, _ in pairs(IMAGOdb.zones or {}) do
-            totalZones = totalZones + 1
-            if IMAGOSaved.seenZones[mapID] then seenZones = seenZones + 1 end
+        for mapID, zdata in pairs(IMAGOdb.zones or {}) do
+            if not f.activeZoneExpansion or zdata.expansion == f.activeZoneExpansion then
+                totalZones = totalZones + 1
+                if IMAGOSaved.seenZones[mapID] then seenZones = seenZones + 1 end
+            end
         end
 
         local perc = totalZones > 0 and (seenZones / totalZones) * 100 or 0
@@ -2626,11 +2845,13 @@ function IMAGO.Chronicle.UpdateList()
         f.startPage.milestones:SetText(nextRanksStr == "" and "|c" .. IMAGO_HEX.SUCCESS .. (IMAGO.L["STARTPAGE_MAX_REACHED"] or "MAXIMALRANG ERREICHT!") .. "|r" or nextRanksStr)
 
         local sortedZones = {}
-        for mapID, data in pairs(IMAGOdb.zones or {}) do 
-            table.insert(sortedZones, {id = mapID, data = data}) 
+        for mapID, data in pairs(IMAGOdb.zones or {}) do
+            if not f.activeZoneExpansion or data.expansion == f.activeZoneExpansion then
+                table.insert(sortedZones, {id = mapID, data = data})
+            end
         end
-        table.sort(sortedZones, function(a, b) 
-            return (a.data["name_" .. locale] or "") < (b.data["name_" .. locale] or "") 
+        table.sort(sortedZones, function(a, b)
+            return (a.data.name or "") < (b.data.name or "")
         end)
 
     for _, zoneObj in ipairs(sortedZones) do
@@ -2735,14 +2956,20 @@ function IMAGO.Chronicle.UpdateList()
                 f.detailTitle:SetText(name)
 
                 if f.detailImage then
-                    f.detailImage:SetTexture(zoneData.texturePath)
-                    f.detailImage:SetDesaturated(false)
-                    f.detailImage:SetVertexColor(1, 1, 1, 1)
-                    f.detailImage:SetSize(760, 200)
-                    f.detailImage:SetTexCoord(0, 1, 0.195, 0.805)
-                    f.detailImage:Show()
-                    if f.detailImageBorder then f.detailImageBorder:Show() end
-                    if f.detailSeparator then f.detailSeparator:Show() end
+                    if zoneData.texturePath and zoneData.texturePath ~= "" then
+                        f.detailImage:SetTexture(zoneData.texturePath)
+                        f.detailImage:SetDesaturated(false)
+                        f.detailImage:SetVertexColor(1, 1, 1, 1)
+                        f.detailImage:SetSize(760, 200)
+                        f.detailImage:SetTexCoord(0, 1, 0.195, 0.805)
+                        f.detailImage:Show()
+                        if f.detailImageBorder then f.detailImageBorder:Show() end
+                        if f.detailSeparator then f.detailSeparator:Show() end
+                    else
+                        f.detailImage:Hide()
+                        if f.detailImageBorder then f.detailImageBorder:Hide() end
+                        if f.detailSeparator then f.detailSeparator:Hide() end
+                    end
                 end
 
                 -- Some languages take 2 bytes for their characters
@@ -2753,7 +2980,7 @@ function IMAGO.Chronicle.UpdateList()
                 local formattedLore = "|c" .. IMAGO_HEX.GOLD .. firstLetter .. "|r" .. restLore
 
                 if zoneData.pointsOfInterest and next(zoneData.pointsOfInterest) then
-                    formattedLore = formattedLore .. "|c" .. IMAGO_HEX.GOLD .. (IMAGO.L["ZONE_POI_HEADER"] or "POINTS OF INTEREST") .. "|r\n_________________________________\n\n"
+                    formattedLore = formattedLore .. "\n\n|c" .. IMAGO_HEX.GOLD .. (IMAGO.L["ZONE_POI_HEADER"] or "POINTS OF INTEREST") .. "|r\n_________________________________\n\n"
                     for _, poi in ipairs(zoneData.pointsOfInterest) do
                         local pName = poi.name or ""
                         local pLore = poi.lore or ""
@@ -2914,6 +3141,7 @@ function IMAGO.Chronicle.OpenToZoneMapID(mapID)
     end
 
     local f = IMAGO.Chronicle.frame
+    f.activeZoneExpansion = IMAGOdb.zones[mapID].expansion
 
     -- Switch to Zones tab and show the window
     IMAGO.Chronicle.SelectMainTab(2)
@@ -2984,6 +3212,7 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
     f.selectedZoneMapID = nil
 
     local data = IMAGO.GetNPCData(slug)
+    if not data then return false end
 
     f.activeFilter = "ALL"
     if f.searchBox then f.searchBox:SetText("") end
@@ -3052,6 +3281,7 @@ function IMAGO.Chronicle.OpenToZoneMapID(mapID)
     end
 
     local f = IMAGO.Chronicle.frame
+    f.activeZoneExpansion = IMAGOdb.zones and IMAGOdb.zones[mapID] and IMAGOdb.zones[mapID].expansion or nil
     IMAGO.Chronicle.SelectMainTab(2)
     f:Show()
 

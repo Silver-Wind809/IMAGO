@@ -268,8 +268,17 @@ function IMAGO.Eras.CreateFrame()
         grad:SetAllPoints()
         grad:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
         grad:SetGradient("VERTICAL",
-            CreateColor(0, 0, 0, 0.05),
-            CreateColor(0, 0, 0, 0.85))
+            CreateColor(0, 0, 0, 0.15),
+            CreateColor(0, 0, 0, 0.70))
+
+        -- Horizontal shadow: strong on the left (behind the title), fades out by mid-banner
+        local lgrad = E.banner:CreateTexture(nil, "ARTWORK", nil, 1)
+        lgrad:SetPoint("TOPLEFT",     E.banner, "TOPLEFT", 0, 0)
+        lgrad:SetPoint("BOTTOMRIGHT", E.banner, "BOTTOM",  0, 0)
+        lgrad:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+        lgrad:SetGradient("HORIZONTAL",
+            CreateColor(0, 0, 0, 0.75),
+            CreateColor(0, 0, 0, 0))
     end
 
     -- Banner: decorative light dots ("stars")
@@ -284,7 +293,7 @@ function IMAGO.Eras.CreateFrame()
         star:SetPoint("TOPLEFT", E.banner, "TOPLEFT",
             s[1] * 800,             -- relative X (banner width ≈ 800px)
             -(s[2] * BANNER_H))
-        star:SetColorTexture(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.45)
+        star:SetColorTexture(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.20)
         table.insert(E.banner.stars, star)
     end
 
@@ -930,8 +939,8 @@ function IMAGO.Eras.OpenToEra(slug, subTab, scrollY)
     -- Banner: era BG (center-crop: no distortion, only cropping)
     if data.bgPath and data.bgPath ~= "" then
         E.banner.eraBg:SetTexture(data.bgPath)
-        E.banner.eraBg:SetTexCoord(0, 1, 0.37, 0.63)  -- shows the vertical middle ~26% of the image
-        E.banner.eraBg:SetAlpha(0.28)
+        E.banner.eraBg:SetTexCoord(0, 1, 0.32, 0.68)  -- band-format files: middle ~36% ≈ banner aspect
+        E.banner.eraBg:SetAlpha(0.68)
     else
         E.banner.eraBg:SetTexture(nil)
         E.banner.eraBg:SetTexCoord(0, 1, 0, 1)
@@ -964,6 +973,12 @@ function IMAGO.Eras.OpenToEra(slug, subTab, scrollY)
     -- Banner: Logo
     if data.logoPath and data.logoPath ~= "" then
         E.banner.logo:SetTexture(data.logoPath)
+        if data.logo_w and data.logo_h then
+            local s = math.min(150 / data.logo_w, 100 / data.logo_h)
+            E.banner.logo:SetSize(data.logo_w * s, data.logo_h * s)
+        else
+            E.banner.logo:SetSize(120, 92)
+        end
         E.banner.logo:SetAlpha(1)
         E.banner.romanLabel:SetAlpha(0)
     else

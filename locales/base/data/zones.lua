@@ -171,3 +171,209 @@ IMAGOdb.zones[2600].pointsOfInterest = {
         lore = "To the north of the Umbral Base Camp lies the wreckage of a demonic spaceship. The Vennorax used to be a prison transport vessel and was stocked full of weapons and offensive systems. The Hal'hadar seem keen to acquire what remains of the Legion's technology.",
     }
 }
+
+-- ============================================================
+-- THE WAR WITHIN
+-- ============================================================
+
+IMAGOdb.zones[2215].name = "Hallowfall"
+IMAGOdb.zones[2215].aliases = {"Beledar", "Mereldar", "Priory of the Sacred Flame"}
+IMAGOdb.zones[2215].lore = [[Between the darkest depths of the Undersea and the shadowed webs of Azj-Kahet, a singular light burns with unending hope. Hallowfall, home to the Arathi, is besieged by enemies of life and all that is good. For the paladins and priests, this has meant that there is never any respite to be had here, and many have lost their lives fighting the unending hordes of nerubians, kobyss, and living shadows.
+
+Why, then, do the Arathi stay in this place of hardship? Why do they risk losing all they have built here day after day instead of simply moving to greener pastures? The answer lies above, in the false sky of the cave: Beledar, a shining star illuminating Hallowfall with its holy Light. Nobody is sure what the crystal is or how it got here, but the Arathi know to have faith in its Light and to protect it at all costs.]]
+IMAGOdb.zones[2215].pointsOfInterest = {
+    {
+        name = "Mereldar",
+        lore = "The fortified capital of the Hallowfall Arathi, this sprawling town was named after one of the first human priestesses to come into contact with the Holy Light. Despite their suffering, the people here have made their new home as warm and welcoming as possible. Apart from military academies, an orphanage, and an infirmary, the inn and marketplace remind them that there is more to life than faith and survival.",
+    },
+    {
+        name = "The Priory of the Sacred Flame",
+        lore = "Overlooking Mereldar is the heart of the Arathi's clergy. The priory stands on a cliffside in direct view of Beledar and is used for meditation, training, and giving the fallen their last rites. Down below, it is surrounded by the Undersea, and strange whispers are often heard from the abyss. A strange creature dubbed 'the Guardian' can often be observed patrolling the area.",
+    },
+    {
+        name = "The Aegis Wall",
+        lore = "To protect against Queen Ansurek's nerubians, a great wall was erected along the southern border of Hallowfall and Azj-Kahet. It houses a dawntower, a type of lighthouse the Arathi use to bring the Light's fire to even the furthest corners of the region.",
+    },
+}
+
+IMAGOdb.zones[2369].name = "The Siren Isle"
+IMAGOdb.zones[2369].aliases = {"Siren Isle", "Lorandel", "Forgotten Vault"}
+IMAGOdb.zones[2369].lore = [[Protected by unnatural-seeming storms, this small island has been coveted by many sailors throughout the years, with none finding what they were hoping for. Naga, kvaldir, and pirates from across the seas of Azeroth brave the tempest to this day, all perishing in their search for 'Circe' and her treasure. During the Fourth War, the Admiralty of Kul Tiras tried to exploit the land for Azerite, but there is no trace of the miners nowadays.
+
+Still, the isle calls for more souls: an expedition of Hallowfall Arathi, goblins, and earthen has set course to it, following the songs of a crystal similar to Beledar. Light willing, they will not perish here.]]
+IMAGOdb.zones[2369].pointsOfInterest = {
+    {
+        name = "Lorandel",
+        lore = "The singing crystal appears to sprout from the center of the small island, spreading for miles underground. Its call brought the Khaz Algari expedition to these dangerous shores, lending further credence to the ominous name of the Siren Isle.",
+    },
+    {
+        name = "The Forgotten Vault",
+        lore = "Circe was more than a ruler of this island; she was a goddess. Although her whereabouts, or whether she remains alive, are currently unknown, her influence can still be felt in every corner, and ancient tablets recall her life and her sacrifice.",
+    },
+    {
+        name = "Ghoststone Diggings",
+        lore = "A small team of Kul Tiran miners was stationed on the Siren Isle, tasked with extracting Azerite for the Ashvane Trading Company. Their ship, or what remains of the Maiden's Whisper, at least, has been remade into the Salt and Shanty, an inn and their lodgings in one. No trace of the men and women can be found now, and they seem to have disappeared in haste, as though the island itself swallowed them.",
+    },
+}
+
+IMAGOdb.zones[2248].name = "The Isle of Dorn"
+IMAGOdb.zones[2248].aliases = {"Isle of Dorn", "Storm's Watch", "Freywold Village", "Cinderbrew Meadery"}
+IMAGOdb.zones[2248].lore = [[While Khaz Algar extends for many miles underground, the Isle of Dorn is what lies on the surface. It is a lush island full of life and beautiful vistas. More often than not, the green fields and mountainsides are broken up by straight lines and circles, indicating the orderly influence of the Titans on the land.
+
+The earthen call the Isle of Dorn their home and live in harmony with both nature and their titan-given purpose of maintaining the land and supplying their brethren below. Barring the great stone city of Dornogal, most other settlements here seem humble in comparison. Were it not for the recent emergence of Xal'atath's nerubians and skardyn, the Isle of Dorn would be one of the most hospitable places on Azeroth. Alas, the Void cares not for order.]]
+IMAGOdb.zones[2248].pointsOfInterest = {
+    {
+        name = "Storm's Watch",
+        lore = "A small island nestled beneath the cliffs of Dornogal, Storm's Watch is home to the Rookery, where the earthen's mighty stormrooks roost. From this windswept outpost, Baelgrim and his Stormriders keep watch over Khaz Algar, taking to the skies at the first sign of danger.",
+    },
+    {
+        name = "Cinderbrew Meadery",
+        lore = "Even formerly diligent servants of the Titans know that the best way to enjoy themselves is with a fine ale. The Cinderbrew Meadery and its domesticated bees provide the earthen people with just that and stand as a monument to the Unbound's culture. Recently, the brewery has come under new management by Goldie Barrelbottom who has, in pure goblin fashion, smelled an opportunity for profit.",
+    },
+    {
+        name = "Freywold Village",
+        lore = "Shrouded by forest and hillsides, this cozy little village houses many of Dornogal's Unbound earthen. Under former Stoneward Adelgonn, the people here live in peace, but also without protection. The village is surrounded by mines, making it a haven for jewelcrafters and blacksmiths alike.",
+    },
+}
+
+IMAGOdb.zones[2255].name = "Azj-Kahet"
+IMAGOdb.zones[2255].aliases = {"The Weaver's Lair", "Siegehold", "Mmarl"}
+IMAGOdb.zones[2255].lore = [[When Azjol-Nerub fell to the Lich King, Azj-Kahet remained the last kingdom of living nerubians. Isolated from the outside world and having lost much of its former splendor since freeing itself from the yoke of the Old Gods, the kingdom is nevertheless a fascinating sight to behold. Suspended from the cave ceilings by immense webs, enormous ziggurats and nests make up the spiders' cities and military training grounds. Travelers would do well to tread lightly near the nerubian dwellings. Not only might the inhabitants enjoy a tasty treat in the form of an adventurer, but it is also apparent that the kingdom is well-prepared for the war it started alongside Xal'atath.
+
+There is a reason the spiders build their homes above: dwelling on the cavern floors and throughout the depths of Azj-Kahet are all manner of horrors. Giant insects and worms, the horrifying necromancer kobyss, and elemental deepwalkers are merely the monsters one can see. The mysterious Black Blood flows in rivers through the depths of the kingdom, and even the slightest contact with it can drive the most stalwart of souls to madness.]]
+IMAGOdb.zones[2255].pointsOfInterest = {
+    {
+        name = "The Weaver's Lair",
+        lore = "Not every nerubian readily followed Queen Ansurek back into the service of the Void. Widow Arak'nai, former advisor to Ansurek's mother, left the capital of the City of Threads to stealthily begin a rebellion from the shadows. Her lair lies well-hidden, but her weave-rats know the way back.",
+    },
+    {
+        name = "Siegehold",
+        lore = "The prime military stronghold of High General Zev'kall lies to the very north of the kingdom. The ascended nerubians train for combat here and, after Dalaran's fall, the fortress has also been used to hold and transport surviving prisoners from the magic city.",
+    },
+    {
+        name = "Mmarl",
+        lore = "One friendly little town has somehow managed to thrive unbothered by Azj-Kahet's horrors. The niffen of Mmarl established their settlement here long ago, and even trade with their nerubian neighbors and help them raise their war beetles. The Rock Bottom Inn always welcomes weary adventurers and currently accommodates a sizable group of goblins from the Venture Company.",
+    },
+}
+
+IMAGOdb.zones[2472].name = "Tazavesh, the Veiled Market"
+IMAGOdb.zones[2472].aliases = {"Tazavesh", "Veiled Market", "Bazaar of Tangible Delights", "Tazarest"}
+IMAGOdb.zones[2472].lore = [[Before its destruction, K'aresh was home to a large variety of technologically advanced city-states, and Tazavesh was one of the greatest. Goods from all across the planet were traded in its markets, and the metropolis became a central hub not only for commerce, but for research and politics as well. It was here that High Priest Salhadaar declared himself King, and it was here that Locus-Walker and the Ravel tried to devise a plan to save their world from Dimensius.
+
+When K'aresh shattered, the surviving Tazaveshi citizens - now known as brokers - transported their city into the In-Between of the Shadowlands. Life went on, and Tazavesh became an even more influential place. Several cartels vie for financial dominance of the Veiled Market, and all that competition has resulted in an assortment of goods found nowhere else in the Great Dark Beyond.
+
+Now, the city has returned home. Owned by Ve'nari, it serves as a hub and base for the K'aresh Trust, uniting brokers and ethereals after being apart for millennia and granting visitors from Azeroth a first look at the famed Veiled Market.]]
+IMAGOdb.zones[2472].pointsOfInterest = {
+    {
+        name = "Bazaar of Tangible Delights",
+        lore = "It is safe to say that if you have the money, the brokers will have whatever it is you're looking for. The Bazaar makes up the vast majority of the floating city and is so immense that it is split into different sections. Clubs and more traditional shops line the market, leaving little to be desired for those looking to have a good time.",
+    },
+    {
+        name = "Tazarest",
+        lore = "For those who have spent too long traversing the Great Dark Beyond, Tazarest offers a welcome place of leisure and rest. The inn directly borders the Gilded Landing and offers astral getaways to ensure convenient fast travel to and from the city.",
+    },
+    {
+        name = "Xy Imports Offices",
+        lore = "During the war against the Jailer, the Maw Walker wreaked havoc in Tazavesh, and Customs Enforcement was almost completely destroyed. In its place, and no longer run by Cartel Om, Xy Imports now controls which goods may or may not enter the Veiled Market.",
+    },
+}
+
+IMAGOdb.zones[2213].name = "City of Threads"
+IMAGOdb.zones[2213].aliases = {"High Hollows", "Nerub-ar Palace", "Ara-Kara"}
+IMAGOdb.zones[2213].lore = [[Slender are the strands that hold up the nests of the wealthy and powerful of the City of Threads. The heart of the kingdom of Azj-Kahet was destined for greatness but has known only decay and suffering for the last few years. Ruled by Queen Ansurek after she usurped her mother, the whole place is now firmly under Xal'atath's influence with the Harbinger's whispers perpetually in the spider monarch's ears.
+
+As the older districts crumble and the depths consume them, new ones are built on top. The further one descends, the more desperate the nerubian citizens become. Guards know who belongs where by pheromone scent, and swift exile or execution await all who trespass into a sector they are deemed undeserving of.]]
+IMAGOdb.zones[2213].pointsOfInterest = {
+    {
+        name = "High Hollows",
+        lore = "Most nerubians would be honored to even set foot on the ground of High Hollows. In the district meant only for the most noble and affluent royal citizens, many of the privileged have chosen to ascend already. Lately, the enigmatic Puppetmaster and his wondrous theater have been the talk of the town.",
+    },
+    {
+        name = "Nerub-ar Palace",
+        lore = "As Queen Ansurek's fortified seat of power, the palace is certainly the most well-protected building in the entire kingdom. Surrounded by her court, her guards, and her experiments with the Black Blood, the queen grows more paranoid by the day. After all, no fortress is impenetrable.",
+    },
+    {
+        name = "Ara-Kara",
+        lore = "A long-lost and deserted part of the lower city, this infested wasteland of former civilization is the eventual destiny of every district of the City of Threads. Swarming with beasts and drowning in Black Blood, the so-called City of Echoes is no longer a place for mortals.",
+    },
+}
+
+IMAGOdb.zones[2339].name = "Dornogal"
+IMAGOdb.zones[2339].aliases = {"The Coreway", "Forgegrounds", "Proscenium"}
+IMAGOdb.zones[2339].lore = [[Dornogal is an ancient city, hewn from the land itself in true orderly fashion by the earthen when they were given their edicts millennia ago. To honor their leaders, Titan Keepers Dornic and Galan, the city was named after them. Originally meant to be a fortress and a shield guarding the Coreway, Dornogal has fallen into disrepair over the ages. The Titans and their keepers have long abandoned their creations in Khaz Algar, and with the Unbound rejecting their edicts to follow their own destinies, as well as more and more earthen shutting down, there is no longer a sufficient workforce to maintain the city and its machines.
+
+Having been unsupervised for all these years, the earthen have slowly begun to develop a culture of their own. Dornogal is still, of course, primarily a fortified place of diligent labor and practical craftsmanship, but inns, markets, and hot baths show that there is more to the earthen than Titan-made logic.]]
+IMAGOdb.zones[2339].pointsOfInterest = {
+    {
+        name = "The Coreway",
+        lore = "The heart of the city, the Coreway is the reason for its construction in the first place. It is an enormous artificial tunnel that connects the surface to the deepest depths of Khaz Algar. The Titans were adamant that it be built, and so the earthen obeyed and continue to defend it to this day - even though they have never been told what its true purpose might be.",
+    },
+    {
+        name = "The Forgegrounds",
+        lore = "Surrounded by marketplaces and direct conveyor lines to the Ringing Deeps, this area is where all the production happens. Earthen craftsmanship is mostly aimed at creating practical objects that serve to fulfill the Titans' orders, yet as the earthen became more independent, they also developed an appreciation for art. Artists and artisans work side by side here in the Forgegrounds, eager to share their talents with the newcomers.",
+    },
+    {
+        name = "The Proscenium",
+        lore = "One newly discovered pastime for many of the Titan-forged citizens of Dornogal is theater. Built just outside the walls of the capital, this auditorium hosts several plays a day recounting the earthen's history. Adventurers eager to learn about Khaz Algar, the Titan Keepers, or the thraegar should pay the Proscenium a visit.",
+    },
+}
+
+IMAGOdb.zones[2214].name = "The Ringing Deeps"
+IMAGOdb.zones[2214].aliases = {"Ringing Deeps", "Gundargaz", "The Earthenworks", "The Warrens"}
+IMAGOdb.zones[2214].lore = [[Beneath Dornogal and down the Coreway, the enormous sacred machines of the Titans have been worked and maintained for tens of thousands of years by the earthen of Khaz Algar. The Machine Speakers are attuned to the humming and ringing of the engines, cogs, and forges of their industrial complex, and fulfilling their duties is what the Titans expected of them. When the Sundering happened, the machines of the Ringing Deeps were cut off from the Manifold - the great Titanic installation spanning all of Azeroth - but the diligent earthen kept working and will remain on duty until their artificial bodies give out.
+
+The earthen workers share this enormous cavern with another civilization: the candle-loving kobolds. Usually, they coexist peacefully with neither bothering the other. Lately, the kobolds have become erratic, and dark things seem to stir in their wax-adorned huts and clefts.]]
+IMAGOdb.zones[2214].pointsOfInterest = {
+    {
+        name = "Gundargaz",
+        lore = "The workers' town is the main settlement in the Ringing Deeps, built not to be comfortable or pretty, but to house the laborers. Like most earthen hamlets, it is slowly falling apart, and with fewer workers by the day, the necessary repairs continue to pile up.",
+    },
+    {
+        name = "The Earthenworks",
+        lore = "After an earthen enters stasis, they need the Awakening Machine housed inside the Stonevault, amidst the great forges and machines north of Gundargaz. This Awakening Machine is broken, and its auxiliary power ran out years ago. High Speaker Eirich needs a miracle to keep the earthen functioning. After all, the edicts must be fulfilled no matter what.",
+    },
+    {
+        name = "The Warrens",
+        lore = "The kobolds live very near to their earthen neighbors, crafting candles, tending bugs, digging mines, and generally minding their own business. Lately they have become aggressive, and there are whispers of dissent in their ranks.",
+    },
+}
+
+IMAGOdb.zones[2346].name = "Undermine"
+IMAGOdb.zones[2346].aliases = {"The Gallagio", "The Incontinental", "Slam Central Station"}
+IMAGOdb.zones[2346].lore = [[Rough streets, dirty dealings, and mob bosses squeezing everyone for their last copper coin... The truth is, many of its citizens don't think that much of Undermine. In many ways the capital, where all cartels come together, represents both the best and the worst of goblin culture. It's one of the liveliest cities on Azeroth, business opportunities lurk around every corner, and the only thing more chaotic than the street traffic are the random explosions that just seem to happen everywhere. Gaudy casinos and garish country clubs of the rich border directly on junkyards where the poor work themselves to death in financial slavery. There's not much in between; one can either feel the boot pressing down on their neck or be the one wearing it.
+
+As bad as Undermine's always been, since Gallywix returned, things have gotten even worse. Where it used to be that wealth and status were only one brilliant invention away, even that seems impossible under the new regime. The Chrome King's Darkfuse Enforcement oppress and intimidate the other cartels to do their dirty work and the former Horde leader has set his sights on the Black Blood. Change, it appears, can only turn life for the worse down here.]]
+IMAGOdb.zones[2346].pointsOfInterest = {
+    {
+        name = "The Gallagio",
+        lore = "As Undermine's main attraction, the ostentatious casino is hard to miss even from afar. Gallywix has always been known to flaunt his considerable wealth, and his new seat of power is no exception. It even comes with a golden statue of its ruler, and is surrounded by well-armed goons - just in case anyone questions the Chrome-King's authority.",
+    },
+    {
+        name = "The Incontinental",
+        lore = "The second-largest building in downtown Undermine. This multi-story hotel was built out of scrap metal and glass. A newcomer to town can't miss it and can surely find a place to rest here.",
+    },
+    {
+        name = "Slam Central Station",
+        lore = "Undermine lies under Mount Kajaro deep underneath the Isle of Kezan, but high speed rocketways connect it directly to other corners of the world like Khaz Algar or Zandalar. Anyone seeking entry to the Undermine must first pass a rigorous security check at the station, often accompanied by fees for seemingly random reasons.",
+    },
+}
+
+IMAGOdb.zones[2371].name = "K'aresh"
+IMAGOdb.zones[2371].aliases = {"The Oasis", "Manaforge Omega", "Shan'dorah"}
+IMAGOdb.zones[2371].lore = [[Here is a world laid to waste by the Void, a once-sprawling planet reduced to a fractured desolation. Thousands of years ago, the K'areshi resided here, and their cities were trading hubs of techno-magical marvels. When the Void Lord Dimensius came, he swallowed the twin suns and the sky itself, and K'aresh became his next target. The K'areshi fought back and managed to severely weaken him - but it cost them their world nonetheless.
+
+Shattered and surrounded by nothing but the Great Dark Beyond, life still tries to cling to the arid remains. The world-soul has been silent, dead in all probability, yet not all have lost faith that somehow, someway, their former home can be restored. If Dimensius were to rise again, all of that feeble hope - and all that yet remains of this broken land - would be snuffed out in an instant. If he were to rise again, Azeroth would suffer the same fate as K'aresh.]]
+IMAGOdb.zones[2371].pointsOfInterest = {
+    {
+        name = "The Oasis",
+        lore = "Ve'nari used up all her considerable wealth to establish Project Eco-Dome, with the Oasis as the most important site of her endeavor. Under this massive shield, she has used Consortium technology to recreate K'aresh's native atmosphere. She is certain that life can thrive here once again - it just needs a lot of help.",
+    },
+    {
+        name = "Manaforge Omega",
+        lore = "The Shadowguard harness K'aresh's energies to feed their master, the destroyer of their home, Dimensius. Gaining power with each passing moment, the Void Lord's all-devouring presence suffocates any adventurer brave enough to get close to the manaforge.",
+    },
+    {
+        name = "Shan'dorah",
+        lore = "Under Magister Umbric, the forces of Azeroth have joined the K'aresh Trust in the defense of the known universe. Amidst the ruins of a long-forgotten settlement, they have made their meager base. It is not built to be defended or inhabited - for the time to strike at Dimensius and the Shadowguard is now.",
+    },
+}
