@@ -24,6 +24,11 @@ local defaults = {
     showOnceOnlyZone = true,
     noMainLoreTimerClose = false,
     enableIdleFlashcards = true,
+    flashcardTypes = {
+        ["dead"]    = true,
+        ["fishing"] = true,
+        ["taxi"]    = true,
+    },
     keepSnippetOpen = false,
     enableMotD = true,
     opaqueUI = false,
