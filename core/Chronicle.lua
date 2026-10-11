@@ -95,16 +95,16 @@ local isNavigatingBack = false
 
 local EXPANSION_SUFFIX = {
     ["midnight"]            = "_midnight",
-    ["the_war_within"]      = "_tww",
-    ["dragonflight"]        = "_df",
-    ["shadowlands"]         = "_sl",
-    ["battle_for_azeroth"]  = "_bfa",
+    ["tww"]                 = "_tww",
+    ["df"]                  = "_df",
+    ["sl"]                  = "_sl",
+    ["bfa"]                 = "_bfa",
     ["legion"]              = "_legion",
-    ["warlords_of_draenor"] = "_wod",
-    ["mists_of_pandaria"]   = "_mop",
-    ["cataclysm"]           = "_cata",
-    ["wrath_of_the_lich_king"] = "_wotlk",
-    ["the_burning_crusade"] = "_tbc",
+    ["wod"]                 = "_wod",
+    ["mop"]                 = "_mop",
+    ["cata"]                = "_cata",
+    ["wotlk"]               = "_wotlk",
+    ["tbc"]                 = "_tbc",
     ["classic"]             = "_classic",
 }
 
