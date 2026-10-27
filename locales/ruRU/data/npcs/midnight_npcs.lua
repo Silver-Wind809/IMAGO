@@ -40,14 +40,12 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen_midnight"].source = "Metrus"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen_midnight"].timeline = IMAGOdb.timelines.LADY_DARKGLEN
 
 -- RIFTBLADE MAELIA --
-IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].name = "Riftblade Maella"
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].name = "Клинок Бездны Маэлла"
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].aliases = {"Маэлла"}
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].race = "Эльф Бездны"
-IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].lore = [[name="Клинок Бездны Маэлла"
-race="Эльф бездны"
-locations="Остров Кель'Данас; Луносвет; Святилище Солнцеубийцы; Шпиль Бездны; Буря Бездны"
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].lore = [[Когда Маэлла ещё жила в Луносвете, она была «разрушительницей чар» - воином, обученным сражаться с магами. Она тайно изучала Бездну с магистром Умбриком, полагая, что в запретной магии кроется ответ, который поможет страдающим эльфам крови. Когда ее секрет раскрыли, Умбрик, вместо того, чтобы отречься от неё, взял вину на себя, в результате чего магистр и его последователи были изгнаны из родных земель.
 
-Когда Маэлла ещё жила в Луносвете, она была «разрушительницей чар» - воином, обученным сражаться с магами. Она тайно изучала Бездну с магистром Умбриком, полагая, что в запретной магии кроется ответ, который поможет страдающим эльфам крови. Когда ее секрет раскрыли, Умбрик, вместо того, чтобы отречься от неё, взял вину на себя, в результате чего магистр и его последователи были изгнаны из родных земель. Теперь, будучи преданной ему до глубины души, Маэлла последовала за Умбриком в Телогрус, где она невольно прониклась силой Бездны. Не имея иного выхода, она стала Клинком Бездны и теперь служит делу рен'дорай, куда бы оно их ни привело.]]
+Теперь, будучи преданной ему до глубины души, Маэлла последовала за Умбриком в Телогрус, где она невольно прониклась силой Бездны. Не имея иного выхода, она стала Клинком Бездны и теперь служит делу рен'дорай, куда бы оно их ни привело.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].zones = {"Остров Кель'Данас", "Луносвет", "Святилище Солнцеубийцы", "Шпиль Бездны", "Буря Бездны"}
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].source = "Metrus"
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].timeline = IMAGOdb.timelines.RIFTBLADE_MAELLA
