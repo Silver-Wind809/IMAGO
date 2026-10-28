@@ -1,7 +1,7 @@
 ﻿-- ============================================================
 -- IMAGO — locales/koKR/data/timelines.lua (연표)
--- NPC 연표 한국어 현지화. 키는 원본 뒤에 _KO을 붙인다.
--- NPC 파일에서 .timeline을 _KO 키로 재지정한다.
+-- NPC 연표 한국어 현지화. 키는 원본 뒤에  을 붙인다.
+-- NPC 파일에서 .timeline을   키로 재지정한다.
 -- 시대 구분(era)은 표시 코드이므로 원문 유지한다.
 -- ============================================================
 
@@ -10,7 +10,7 @@ if GetLocale() ~= "koKR" then return end
 -- ============================================================
 -- 안두인 린
 -- ============================================================
-IMAGOdb.timelines.ANDUIN_WRYNN_KO = {
+IMAGOdb.timelines.ANDUIN_WRYNN  = {
     {era = "Pre-WC3", text = "아기 때 석공의 폭동으로 어머니를 잃었다."},
     {era = "Classic",  text = "아버지 실종 때 잠시 스톰윈드의 왕이 되었다. 오닉시아에게 붙잡혔으나 돌아온 아버지 바리안 왕에게 구출되었다."},
     {era = "WotLK",    text = "스톰윈드의 스컬지 침공 때 아버지의 목숨을 구했다."},
@@ -29,7 +29,7 @@ IMAGOdb.timelines.ANDUIN_WRYNN_KO = {
 -- ============================================================
 -- 파에린 로서
 -- ============================================================
-IMAGOdb.timelines.FAERIN_LOTHAR_KO = {
+IMAGOdb.timelines.FAERIN_LOTHAR  = {
     {era = "Pre-Legion", text = "할로우폴 원정 비행선에 몰래 탔다가 도착하며 몸이 불편해졌다. 스틸스트라이크 장군 휘하 등불지기로 훈련받았다."},
     {era = "TWW",        text = "할로우폴을 네루비안에게서 지키고 최전선에서 잘아타스를 물리치는 데 싸웠다. 안두인 린과 친구가 되어 빛에 대한 믿음을 되찾도록 도왔다. 이후 스트롬가드에서 마란 트롤베인의 반란을 막는 데 도왔다."},
     {era = "Midnight",   text = "태양샘에 소환되어 공허에게서 샘을 지키는 데 도왔다."},
@@ -38,7 +38,7 @@ IMAGOdb.timelines.FAERIN_LOTHAR_KO = {
 -- ============================================================
 -- 알레리아 윈드러너
 -- ============================================================
-IMAGOdb.timelines.ALLERIA_WINDRUNNER_KO = {
+IMAGOdb.timelines.ALLERIA_WINDRUNNER  = {
     {
         era = "Pre-WC2",
         text = [[차기 실버문 순찰대 총사령관 자리를 거부하고 고향을 떠나 바깥세상을 보고자 했다. 로데론 동맹 안에 접촉하고 동맹을 맺었다. 부재 중 부모가 오크 호드에 살해되었다.]],
@@ -92,7 +92,7 @@ IMAGOdb.timelines.ALLERIA_WINDRUNNER_KO = {
 -- ============================================================
 -- 잘아타스
 -- ============================================================
-IMAGOdb.timelines.XAL_ATATH_KO = {
+IMAGOdb.timelines.XAL_ATATH  = {
     {
         era = "Ancient",
         text = [[세계가 멸망하고 공허의 존재가 되기 전 필멸자였다고 주장한다. 디멘시우스의 도래를 알려 카레쉬를 비롯해 세계를 하나씩 집어삼키게 했다. 검은 제국 시절 아제로스의 고대 신과 마주했으나 져서 검은 제국의 검에 갇혔다.
@@ -144,13 +144,13 @@ IMAGOdb.timelines.XAL_ATATH_KO = {
 -- ============================================================
 -- 오르웨이나
 -- ============================================================
-IMAGOdb.timelines.ORWEYNA_KO = {
+IMAGOdb.timelines.ORWEYNA  = {
     {era = "Pre-BfA", text = "아즈카헤트에서 검은 피 위협을 눈치채고 확산과 싸우고자 처음으로 하란다르 밖에 나섰다."},
     {era = "TWW",     text = "아즈카헤트에서 알레리아와 파에린의 원정을 네루비안에게서 구했다. 검은 피 조사를 계속해 언더마인까지 뒤쫓았고 갤리윅스에 맞선 가즈로의 반란을 도왔다."},
     {era = "Midnight", text = "하란다르와 쿠엘탈라스 모두에서 빛꽃 억제를 도왔다. 백성과 쿠엘탈라스 엘프 사이 잠정 동맹을 협상해 하라니르가 처음으로 바깥세상을 탐험하게 했다."},
 }
 
-IMAGOdb.timelines.LORTHEMAR_THERON_KO = {
+IMAGOdb.timelines.LORTHEMAR_THERON  = {
     {era = "WC2", text = "실바나스 윈드러너 지휘 아래 실버문을 지키는 데 성공해 순찰대 군주로 승진했다."},
     {era = "WC3", text = "쿠엘탈라스 멸망에서 살아남자 캘타스 왕자가 섭정 군주로 임명했다. 스컬지에게서 실버문을 되찾는 데 성공했다."},
     {era = "TBC", text = "블러드 엘프를 이끌고 호드에 합류했고 하이 엘프를 추방하기로 결정했으며 배신 뒤 캘타스를 폐위했다. 내전 뒤 로르테마르가 섭정 군주로 남았다."},
@@ -165,7 +165,7 @@ IMAGOdb.timelines.LORTHEMAR_THERON_KO = {
     {era = "Midnight", text = "공허에 맞선 실버문 수호에 블러드 엘프 군세를 이끌었다."},
 }
 
-IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA_KO = {
+IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA  = {
     {era = "Legion", text = "군단에 맞서다 수라마르에서 추방되었고 카드가가 가로챈 마법 조난 신호를 보냈다. 덕분에 샬아란에 저항군을 세웠다. 동맹과 함께 밤샘 의존에서 나이트본을 풀어주고 호드·얼라이언스 군세와 합동 공격으로 수라마르를 해방했다. 지도자가 된 뒤 밤샘을 사라지게 하고 나이트본을 호드에 맹세시켰다."},
     {era = "BfA", text = "4차 대전쟁 때 잔달라를 스톰윈드에서 탈출시키는 데 호드를 도왔고 나즈자타에서 호드 함대를 도왔으며 이후 실바나스 윈드러너에 맞선 반란을 지지했다. 느조스 패망 뒤 호드 평의회에 합류했다."},
     {era = "SL", text = "얼음왕관 성채 서리 왕좌에서 나락 문을 여는 의식을 목격했다. 간수 패망 뒤 탈리스라와 로르테마르가 잠시 어둠땅 오리보스에 가서 실바나스의 재판에 참석했다."},
@@ -173,7 +173,7 @@ IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA_KO = {
     {era = "Midnight", text = "태양샘 타락까지 실버문 선퓨리 첨탑에 머물렀다. 수라마르에 지원을 요청했으나 응답이 없자 조사하러 가서 황혼의 칼날 침투자를 밝혀냈다. 질서를 되돌린 뒤 나이트본 군대를 실버문으로 이끌고 포식의 군단 공격을 도왔다."},
 }
 
-IMAGOdb.timelines.LADY_LIADRIN_KO = {
+IMAGOdb.timelines.LADY_LIADRIN  = {
     {era = "WC2", text = "아마니 트롤에 맞서 싸웠고 먼저 붙잡혔다가 줄진을 붙잡는 데 도왔다. 적 전쟁군주가 오랫동안 고문당하는 것을 보고 큰 죄책감을 느끼며 숲 트롤이 처음으로 자비받을 가치 있다 판단했다."},
     {era = "WC3", text = "실버문 함락에서 간신히 살아남았다. 믿음과 가족을 잃고 사제직을 버렸다."},
     {era = "Pre-Classic", text = "최초 블러드 기사 성기사이자 교단 지도자가 되었다."},
@@ -189,7 +189,7 @@ IMAGOdb.timelines.LADY_LIADRIN_KO = {
     {era = "Midnight", text = "리아드린이 태양샘 수호 최전선에 싸웠고 줄자라의 아마니에게서 외부 도움을 모집해 새벽샘 창조를 도왔다."},
 }
 
-IMAGOdb.timelines.GRAND_MAGISTER_ROMMATH_KO = {
+IMAGOdb.timelines.GRAND_MAGISTER_ROMMATH  = {
     {era = "Pre-WC1", text = "마법 수도 달라란에서 친구 움브릭, 다르칸 드라시르와 함께 비전을 공부했다."},
     {era = "WC3", text = "실버문 파괴에서 살아남아 달라란 수호에 캘타스 선스트라이더와 합류했다. 키린 토 지하감옥을 탈출한 뒤 왕자를 따라 아웃랜드에 가서 일리단 스톰레이지에게 블러드 엘프의 마법 중독과 싸우는 법을 배웠다. 대마법학자로 실버문에 돌아왔다."},
     {era = "Pre-TBC", text = "블러드 기사단 창설을 돕고 캘타스 인준으로 정치 권력에 올랐다. 블러드 엘프의 마법 섭취를 관리해 최대한 few가 중독에 굴하지 않게 했다."},
@@ -203,7 +203,7 @@ IMAGOdb.timelines.GRAND_MAGISTER_ROMMATH_KO = {
     {era = "Midnight", text = "로마트가 포식의 군단 수호에 실버문 마법학자를 이끌었다. 움브릭의 공허 마법 사용에 여전히 경계하나 공동의 적을 물리치는 데 전문지식이 필요함에 마지못해 동의했다."},
 }
 
-IMAGOdb.timelines.HALDURON_BRIGHTWING_KO = {
+IMAGOdb.timelines.HALDURON_BRIGHTWING  = {
     {era = "WC2", text = "아마니 트롤에 맞서 싸웠고 지도자 줄진을 붙잡았다."},
     {era = "WC3", text = "스컬지 공격에서 살아남아 실바나스 사후 순찰대 총사령관에 임명되었다. 폐허 실버문에서 남은 스컬지 세력을 몰아내기 시작했다."},
     {era = "TBC", text = "블러드 기사단 창설에 강히 반대했다. 오그리마 사절로 블러드 엘프의 호드 가입을 성공리에 협상했다."},
@@ -215,7 +215,7 @@ IMAGOdb.timelines.HALDURON_BRIGHTWING_KO = {
     {era = "Midnight", text = "할두론이 빛꽃 위협을 처음 눈치채고 오르웨이나와 하란다르에 들어갔다. 하라니르와 잠정 동맹을 확보해 빛꽃을 억제하고 실버문 수호를 강화했다."},
 }
 
-IMAGOdb.timelines.VEREESA_WINDRUNNER_KO = {
+IMAGOdb.timelines.VEREESA_WINDRUNNER  = {
     {era = "Pre-WC2", text="쿠엘탈라스 가장 명문 중 하나인 윈드러너 가문 일원으로 윈드러너 첨탑에 평화롭게 살았다."},
     {era = "WC2", text="쿠엘탈라스 수호에 참여해 누이 알레리아의 실버문 여행을 도왔다. 비밀리에 훈련시킨 어린 남동생 리라스가 호드 손에 죽어, 실버문에 안전히 두고자 훈련을 거부한 실바나스와 관계가 손상되었다."},
     {era = "Pre-WC3", text="누이 알레리아 부탁에 아라토르를 입양했고 마법사 로닌이 붉은 용군단 위상 알렉스트라자를 용아귀 오크 씨족 손아귀에서 구하는 비밀 임무를 도왔다. 데스윙의 계획을 망쳤다."},
@@ -231,7 +231,7 @@ IMAGOdb.timelines.VEREESA_WINDRUNNER_KO = {
     {era = "Midnight", text = "은빛 서약단과 함께 쿠엘다나스 섬 어둠샘 공격에 합류했다. 전투 뒤 은빛 서약단을 해산해 애타스 선리버와 실버선 협정을 맺었다. 이후 어둠샘 정화에 참석해 아나스테리안 선스트라이더의 왕관을 바쳤다."},
 }
 
-IMAGOdb.timelines.SHANDRIS_FEATHERMOON_KO = {
+IMAGOdb.timelines.SHANDRIS_FEATHERMOON  = {
         {era = "Ancient", text = "불타는 군단 1차 침공 때 고아가 되어 티란데 위스퍼윈드에게 입양되었다."},
     {era = "WC3", text = "잿더미 골짜기와 하이잘 산에서 불타는 군단과 아키몬드 본인에 맞서 싸웠다."},
     {era = "Classic", text = "파수대 최고 장군으로 승진했다."},
@@ -245,7 +245,7 @@ IMAGOdb.timelines.SHANDRIS_FEATHERMOON_KO = {
     {era = "Midnight", text = "샨드리스가 공허 위협에 맞서 블러드 엘프를 도왔고 새벽샘 창조를 도왔다."},
 }
 
-IMAGOdb.timelines.AETHAS_SUNREAVER_KO = {
+IMAGOdb.timelines.AETHAS_SUNREAVER  = {
     {era = "WotLK", text = "푸른 용군단에게서 달라란을 지키고 리치 왕과 싸우고자 블러드 엘프의 키린 토 재가입을 성공리에 주장했다. 도시 안 호드 대표 추종자와 선리버 파를 정식으로 결성했다."},
     {era = "Pre-MoP", text = "호드에게서 테라모어를 지키고자 키린 토 지원을 보내자고 투표했다. 그러나 도시가 마나 폭탄에 소멸한 뒤 복수를 위해 달라란을 동원해달라는 제이나 프라우드무어 요청을 거부했다."},
     {era = "MoP", text = "호드 전쟁 범죄와 엮여 달라란 숙청 때 투옥되었다. 구조 뒤 천둥의 섬 정벌과 가로쉬 헬스크림에 맞선 반란에 쿠엘탈라스를 도왔다."},
@@ -256,14 +256,14 @@ IMAGOdb.timelines.AETHAS_SUNREAVER_KO = {
     {era = "Midnight", text = "다가오는 공허에 맞선 실버문 수호에 선리버를 이끌고 도시가 함락되지 않도록 은빛 서약단 존재를 용인했다. 쿠엘다나스에서 공허에 맞선 성공적인 공격 뒤 은빛 서약단과 실버선 협정에 합의했다. 큰 필요 때 차이를 제쳐두는 불안한 합의다."},
 }
 
-IMAGOdb.timelines.SALANDRIA_KO = {
+IMAGOdb.timelines.SALANDRIA  = {
     {era = "TBC", text = "어린이 주간에 호드 용사와 모험을 떠나 처음으로 샤트라스 밖 세상을 보았다. 미래에 저지를 일 때문에 청동 용에게 보이는 대로 공격당했다. 이후 살란드리아가 리아드린에게 입양되었다."},
     {era = "SL", text = "블러드 기사 수습생으로 첫 임무에 나서 호드 용사와 어둠땅에 동행해 새로 일어난 쿠엘탈라스 스컬지에 맞설 무기를 충전했다. 리아드린과 함께 산레인 보라스를 물리쳐 스컬지 위협을 일단 끝냈다."},
     {era = "TWW", text = "어머니를 따라 할로우폴에 가서 잘아타스 세력과 싸웠다. 아라시의 신성한 불꽃을 알게 되었다."},
     {era = "Midnight", text = "다가오는 공허폭풍에 맞서 태양샘을 지켰다. 탤리아 포드라곤과 함께 황혼의 칼날 교단에게 붙잡힌 성기사를 구하고 지도자를 처치했다."},
 }
 
-IMAGOdb.timelines.MAGISTER_UMBRIC_KO = {
+IMAGOdb.timelines.MAGISTER_UMBRIC  = {
     {era = "Pre-WC1", text = "친구 로마트, 다르칸 드라시르와 함께 달라란에서 비전을 공부했다."},
     {era = "Pre-WotLK", text = "금지된 공허 마법 수련 탓에 실버문에서 추방되었다."},
     {era = "Legion", text = "텔로그러스 균열을 발견해 추종자와 함께 렌도레이로 변했다. 자리를 내준 알레리아 윈드러너 뒤에 얼라이언스에 합류했다."},
@@ -274,7 +274,7 @@ IMAGOdb.timelines.MAGISTER_UMBRIC_KO = {
     {era = "Midnight", text = "실버문이 위험해지자 공허와 싸우고자 옛 고향에 돌아왔다. 공허폭풍으로 통하는 길을 열고 이후 새벽샘 창조를 도왔다. 노력의 대가로 완전 사면받고 실버문에 다시 받아들여졌다."},
 }
 
-IMAGOdb.timelines.LADY_DARKGLEN_KO = {
+IMAGOdb.timelines.LADY_DARKGLEN  = {
     {
         era = "DF",
         text = [[그림자수호단에게서 텔로그러스 균열을 지키는 데 도왔다.]],
@@ -289,7 +289,7 @@ IMAGOdb.timelines.LADY_DARKGLEN_KO = {
     }
 }
 
-IMAGOdb.timelines.RIFTBLADE_MAELLA_KO = {
+IMAGOdb.timelines.RIFTBLADE_MAELLA  = {
     {
         era = "Pre-WotLK",
         text = [[공허 의식을 치르다 발각되어 대마법학자 로마트와 로르테마르 테론에게 쿠엘탈라스에서 추방되었다.]],
@@ -316,14 +316,14 @@ IMAGOdb.timelines.RIFTBLADE_MAELLA_KO = {
     }
 }
 
-IMAGOdb.timelines.ASTALOR_BLOODSWORN_KO = {
+IMAGOdb.timelines.ASTALOR_BLOODSWORN  = {
     {era = "WC3", text = "붙잡힌 나루에게서 성스러운 빛을 빨아들여 엘프가 다시 휘두르게 해 블러드 기사 성기사단을 공동 설립했다."},
     {era = "TBC", text = "배신자 지도자 캘타스에 맞서 실버문을 지키는 데 도왔다."},
     {era = "WoD", text = "리아드린의 강철 호드 정벌을 보강하고자 피 마법 골렘으로 블러드 엘프 군세를 지원했다."},
     {era = "Midnight", text = "도시 수호를 강화하고 블러드 엘프 생존 번영을 확보하고자 새 마법, 즉 고뇌를 실험했다."},
 }
 
-IMAGOdb.timelines.LORD_SALTHERIL_KO = {
+IMAGOdb.timelines.LORD_SALTHERIL  = {
     {
         era = "Pre-WC2",
         text = [[연회에서 음료에 상처나무를 타서 일시 혀를 마비시킨 소동 뒤 실바나스 윈드러너를 영지에서 추방했다.]],
@@ -338,7 +338,7 @@ IMAGOdb.timelines.LORD_SALTHERIL_KO = {
     }
 }
 
-IMAGOdb.timelines.LORD_ANTENORIAN_KO = {
+IMAGOdb.timelines.LORD_ANTENORIAN  = {
     {
         era = "Pre-MN",
         text = [[행정관을 수년 일한 뒤 트랭퀼리엔에 옮겨 마을 통치자가 되었다.]],
@@ -349,7 +349,7 @@ IMAGOdb.timelines.LORD_ANTENORIAN_KO = {
     }
 }
 
-IMAGOdb.timelines.LEONA_DARKSTRIDER_KO = {
+IMAGOdb.timelines.LEONA_DARKSTRIDER  = {
     {
         era = "TWW",
         text = [[마법학자 움브릭의 제자로 카레쉬에서 싸웠다. 일리다리 길을 가르쳐주는 대가로 악마사냥꾼 아다루스에 공허를 깃들이자고 제안했다. 아다루스가 공허 속삭임 유혹을 견디지 못해 처치해야 했고 레오나 훈련이 미완으로 끝났다.]],
@@ -364,7 +364,7 @@ IMAGOdb.timelines.LEONA_DARKSTRIDER_KO = {
     }
 }
 
-IMAGOdb.timelines.CHIEF_TELEMANCER_OCULETH_KO = {
+IMAGOdb.timelines.CHIEF_TELEMANCER_OCULETH  = {
     {
         era = "Ancient",
         text = [[고대 전쟁 전 수라마르 순간이동 그물을 세우고 유지하며 새 주문을 만지작거렸다. 분리 때 수라마르 보호 장벽 아래 피신했다.]],
@@ -387,7 +387,7 @@ IMAGOdb.timelines.CHIEF_TELEMANCER_OCULETH_KO = {
     }
 }
 
-IMAGOdb.timelines.ARCANIST_VALTROIS_KO = {
+IMAGOdb.timelines.ARCANIST_VALTROIS  = {
     {
         era = "Pre-Legion",
         text = [[지맥 지식으로 수라마르에 비전술사로 명성을 떨쳤다. 나이트본 지도자가 불타는 군단과 수라마르 동맹을 택하자 탈리스라의 반란 뒤 추방되어 마법 금단으로 시들어갔다.]],
@@ -410,7 +410,7 @@ IMAGOdb.timelines.ARCANIST_VALTROIS_KO = {
     }
 }
 
-IMAGOdb.timelines.DANATH_TROLLBANE_KO = {
+IMAGOdb.timelines.DANATH_TROLLBANE  = {
     {era = "WC2", text = "투랄리온 장군 휘하 로데론 동맹 지휘관 겸 전술가로 동부 왕국을 위협한 오크 호드를 물리치고 어둠의 문 너머 고향 세계 드레노어까지 추적했다."},
     {era = "TBC", text = "지옥불 반도 악마 군대를 막는 데 명예 요새 병력을 이끌었다."},
     {era = "Legion", text = "영웅 전사가 전쟁파괴자 스트롬카, 즉 최초 인간 왕이자 다나스 트롤베인 본인 조상인 소라딘 왕의 전설 검을 얻는 데 도왔다. 군단 패망 뒤 다나스가 오래 폐허인 스트롬가드에 돌아와 도시를 재건하고 출생권으로 왕을 자처했다."},
@@ -419,7 +419,7 @@ IMAGOdb.timelines.DANATH_TROLLBANE_KO = {
     {era = "Midnight", text = "아라토르가 아버지 투랄리온의 역사와 2차 대전쟁 역할 일부를 배우도록 도왔다. 아제로스 곳곳 모험가에게 집 밖 집인 아칸티나를 소개했다."},
 }
 
-IMAGOdb.timelines.TURALYON_KO = {
+IMAGOdb.timelines.TURALYON  = {
     {era = "Pre-WC1", text = "고아가 되어 사제가 되고자 성스러운 빛의 교회에 맡겨졌다."},
     {era = "WC2", text = "실버 핸드 기사단의 최초 다섯 성기사 중 하나가 되었다. 로서의 장군으로 싸워 2차 대전쟁을 결정하고 호드를 몰아냈다. 알레리아를 만나 아들을 낳고 아웃랜드에 들어가 마침내 고립되었다."},
     {era = "Pre-WC3", text = "알레리아와 뒤틀린 황천을 여행하며 불타는 군단과 싸우고자 빛의 군대에 징집되었다. 아제로스 수십 년이 그들에게 천 년 전쟁이었다. 투랄리온이 빛벼림이 되었다."},
@@ -435,7 +435,7 @@ IMAGOdb.timelines.TURALYON_KO = {
     {era = "Midnight", text = "공허에 맞서 실버문을 지키고자 태양샘에 불려 다시 빛의 세력을 이끌었다. 열의가 통제를 벗어나 끔찍한 사고에 아들을 다치게 했으나 그래도 빛에 대한 믿음을 잃지 않았다. 공허첨탑에서 잘아타스와 마주해 알레리아와 어둠샘에 사라졌다."},
 }
 
-IMAGOdb.timelines.PROPHET_VELEN_KO = {
+IMAGOdb.timelines.PROPHET_VELEN  = {
     {
         era = "Ancient",
         text = [[수천 년 전 벨렌, 킬제덴, 아키몬드가 목가적인 에레다르 고향 세계 아르고스를 삼두정으로 다스렸다. 살게라스가 힘과 불타는 군단 자리를 제안하자 벨렌이 거부하고 최대한 많은 추종자를 모아 행성을 탈출했다. 한때 형제 같던 킬제덴이 배신 탓에 사냥을 맹세했다.]],
@@ -490,7 +490,7 @@ IMAGOdb.timelines.PROPHET_VELEN_KO = {
     }
 }
 
-IMAGOdb.timelines.CALIA_MENETHIL_KO = {
+IMAGOdb.timelines.CALIA_MENETHIL  = {
     {
         era = "WC2",
         text = [[칼리아가 겨우 16살 때 아버지 뜻에 반해 알테락 귀족 다발 프레스토 군주와 약혼했다. 실은 용 데스윙 변장이던 프레스토가 전쟁 뒤 사라졌고 칼리아는 미혼으로 남아 기뻐했다.]],
@@ -537,7 +537,7 @@ IMAGOdb.timelines.CALIA_MENETHIL_KO = {
     }
 }
 
-IMAGOdb.timelines.TAELIA_FORDRAGON_KO = {
+IMAGOdb.timelines.TAELIA_FORDRAGON  = {
     {era = "WC2", text = "2차 대전쟁을 피하고자 어린 아이로 쿨 티라스에 보내졌다. 성기사로 키워준 사이러스 크레스트폴의 보살핌에 들어갔다."},
     {era = "WotLK", text = "아버지의 편지가 끊겼고 탤리아가 아버지가 리치 왕과의 전쟁에 '사망'했음을 알게 되었다."},
     {era = "BfA", text = "프라우드무어 가문에 맞선 프리실라 애쉬베인의 배신을 밝혀냈다. 타락하고 미친 스톰송 군주를 물리치는 데 도왔다. 4차 대전쟁 뒤 안두인 왕이 직접 공적을 치하했다."},
@@ -545,7 +545,7 @@ IMAGOdb.timelines.TAELIA_FORDRAGON_KO = {
     {era = "Midnight", text = "다가오는 공허폭풍에 맞서 태양샘을 지켰다. 살란드리아와 함께 황혼의 칼날 교도에게 붙잡힌 성기사를 구하고 지도자를 처치했다."},
 }
 
-IMAGOdb.timelines.MOIRA_THAURISSAN_KO = {
+IMAGOdb.timelines.MOIRA_THAURISSAN  = {
     {
         era = "Pre-Classic",
         text = [[아이언포지 마그니 왕과 에이메아 왕비의 외동 계승자로 태어났다. 모이라가 어릴 때 어머니가 트롤 소규모 충돌에 죽었고 아버지와 사이가 벌어졌다. 아들보다 딸을 원했고 신하에게 분명히 알렸다.]],
@@ -600,7 +600,7 @@ IMAGOdb.timelines.MOIRA_THAURISSAN_KO = {
     }
 }
 
-IMAGOdb.timelines.CAPTAIN_FAREEYA_KO = {
+IMAGOdb.timelines.CAPTAIN_FAREEYA  = {
     {
         era = "Ancient",
         text = [[에레다르가 불타는 군단에 합류할 때 예언자 벨렌과 게네다르호에 아르고스를 탈출했다. 이후 다른 우주선 제네다르호를 나포해 뒤틀린 황천에 돌아갔다. 나루 제라 지휘 아래 빛벼림이 되어 빛의 군대 지도자가 되었다.]],
@@ -627,7 +627,7 @@ IMAGOdb.timelines.CAPTAIN_FAREEYA_KO = {
     }
 }
 
-IMAGOdb.timelines.DELAS_MOONFANG_KO = {
+IMAGOdb.timelines.DELAS_MOONFANG  = {
     {
         era = "Ancient",
         text = [[고대 전쟁 때 발샤라에서 자라 엘룬 자매회에 합류했다.]],
@@ -654,7 +654,7 @@ IMAGOdb.timelines.DELAS_MOONFANG_KO = {
     }
 }
 
-IMAGOdb.timelines.LORD_GRAYSON_SHADOWBREAKER_KO = {
+IMAGOdb.timelines.LORD_GRAYSON_SHADOWBREAKER  = {
     {
         era = "Pre-Classic",
         text = [[로데론의 스컬지 이후 포세이큰이 된 누이 주베카가 찾아왔다. 그레이슨이 혐오해 쫓아냈고 괴물에 불과하다고 여겼다.]],
@@ -689,7 +689,7 @@ IMAGOdb.timelines.LORD_GRAYSON_SHADOWBREAKER_KO = {
     }
 }
 
-IMAGOdb.timelines.EADRIC_THE_PURE_KO = {
+IMAGOdb.timelines.EADRIC_THE_PURE  = {
     {
         era = "WotLK",
         text = [[은빛십자군과 티리온 폴드링 밑에서 대용사로 일했다. 터를 안전 보급 상태로 유지하고 전투원 훈련을 감독하며 북부 얼음왕관 대은빛십자군 비무대회 조직을 맡았다. 병참장교로 일했고 가끔 비무에 직접 투사로 참여했다.]],
@@ -708,7 +708,7 @@ IMAGOdb.timelines.EADRIC_THE_PURE_KO = {
     }
 }
 
-IMAGOdb.timelines.YALIA_SAGEWHISPER_KO = {
+IMAGOdb.timelines.YALIA_SAGEWHISPER  = {
     {
         era = "Pre-WC3",
         text = [[장래 결혼해 아내로 맞고자 두 젊은 판다렌 소년이 끝없는 경쟁에 빠지자 얄리아는 고향 가족을 뒤에 남기는 것 외 선택이 없었다. 다섯 살에 음영파 교단에 합류했다.]],
@@ -727,7 +727,7 @@ IMAGOdb.timelines.YALIA_SAGEWHISPER_KO = {
     }
 }
 
-IMAGOdb.timelines.FIONA_KO = {
+IMAGOdb.timelines.FIONA  = {
     {
         era = "Cata",
         text = [[타레나르와 기드윈과 동부 역병지대를 여행했다. 여러 차례 멈춰 희망의 빛 예배당 성기사를 돕고 한동안 성역에 정착했다. 길에 아르고스 높은봉화, 파멜라 레드패스 유령, 벡스툴 같은 친구 지인을 여럿 사귀었다.]],
@@ -750,7 +750,7 @@ IMAGOdb.timelines.FIONA_KO = {
     }
 }
 
-IMAGOdb.timelines.LOTHRAXION_KO = {
+IMAGOdb.timelines.LOTHRAXION  = {
     {
         era = "Ancient",
         text = [[불타는 군단 악마로 거대한 어둠 저편에 무수한 세계 파괴를 도왔다. 드레나이를 만난 뒤 악마와 동료 나스레짐을 버렸다. 마침내 빛의 군대에 합류해 빛의 어머니 제라에 충성을 맹세하고 빛 자체가 깃들었다.]],
@@ -769,7 +769,7 @@ IMAGOdb.timelines.LOTHRAXION_KO = {
     }
 }
 
-IMAGOdb.timelines.ALONSUS_FAOL_KO = {
+IMAGOdb.timelines.ALONSUS_FAOL  = {
     {era = "Pre-WC1", text = "성스러운 빛 교회를 대주교로 이끌었다. 우서를 제자로 받아들였다."},
     {era = "WC2", text = "실버 핸드 기사단을 세우고 최초 성기사를 직접 훈련했다."},
     {era = "Pre-WC3", text = "스톰윈드와 로데론 왕국 여러 정착지 재건 돕고자 기금을 모았다. 새 제자 베네딕투스와 함께 스톰윈드 대성당을 세웠다. 얼마 뒤 알론서스가 자연사했다."},
@@ -782,7 +782,7 @@ IMAGOdb.timelines.ALONSUS_FAOL_KO = {
     {era = "Midnight", text = "태양샘 수호를 감독하고 지친 수호자에게 성스러운 마법을 주었다. 아버지와 빛에 대한 의심을 극복하도록 아라토르를 도왔다."},
 }
 
-IMAGOdb.timelines.TAHU_SAGEWIND_KO = {
+IMAGOdb.timelines.TAHU_SAGEWIND  = {
     {
         era = "WotLK",
         text = [[썬더 블러프에서 아포니 브라이트메인과 안쉬의 본성을 곱씹었다. 그곳에서 타우렌 선견자·태양 방랑자 교단 창설 첫걸음이 내디뎌졌다.]],
@@ -805,7 +805,7 @@ IMAGOdb.timelines.TAHU_SAGEWIND_KO = {
     }
 }
 
-IMAGOdb.timelines.APONI_BRIGHTMANE_KO = {
+IMAGOdb.timelines.APONI_BRIGHTMANE  = {
     {
         era = "WotLK",
         text = [[노스렌드에서 리치 왕 군대에 맞서 전사로 싸웠으나 중상을 입고 썬더 블러프로 돌아왔다. 이곳에서 그녀와 타후 세이지윈드가 최초 타우렌 성기사·사제 교단 창설 기반을 다졌다. 치유된 뒤 아포니가 전쟁에 돌아와 이제 안쉬의 빛을 곁에 두고 싸웠다.]],
@@ -836,7 +836,7 @@ IMAGOdb.timelines.APONI_BRIGHTMANE_KO = {
     }
 }
 
-IMAGOdb.timelines.WAR_CHAPLAIN_SENN_KO = {
+IMAGOdb.timelines.WAR_CHAPLAIN_SENN  = {
     {
         era = "Legion",
         text = [[아르고스에서 불타는 군단과 싸웠다.]],
@@ -851,7 +851,7 @@ IMAGOdb.timelines.WAR_CHAPLAIN_SENN_KO = {
     }
 }
 
-IMAGOdb.timelines.GENERAL_AMIAS_BELLAMY_KO = {
+IMAGOdb.timelines.GENERAL_AMIAS_BELLAMY  = {
     {
         era = "Pre-Legion",
         text = [[황제의 환영에 아라시 원정에 합류했다. 항해를 살아남아 할로우폴에 고립되었고 그리하여 성기사로 수정 벨레다르를 지키고 새 고향에 다가오는 어떤 적도 물리치고자 싸웠다.]],
@@ -862,7 +862,7 @@ IMAGOdb.timelines.GENERAL_AMIAS_BELLAMY_KO = {
     }
 }
 
-IMAGOdb.timelines.ARATOR_KO = {
+IMAGOdb.timelines.ARATOR  = {
     {era = "WC2", text = "2차 대전쟁 때 태어나 아제로스에 남겨져 고모 베리사 윈드러너에게 키워졌다."},
     {era = "WC3", text = "3차 대전쟁에서 살아남자 베리사가 실버문에 데려가 로르테마르와 리아드린에게 빛의 길을 훈련받았다."},
     {era = "TBC", text = [[부모를 찾고자 아웃랜드 원정에 합류했다. 성기사로 얼라이언스 깃발 아래 섰다. "구원자 아라토르"라 불렸다.]]},
@@ -871,7 +871,7 @@ IMAGOdb.timelines.ARATOR_KO = {
     {era = "Midnight", text = "태양샘에 소환된 뒤 공허와 최전선에 싸웠다. 공동의 적과 싸우고자 아제로스 엘프 국가 재통일을 조직했다."},
 }
 
-IMAGOdb.timelines.NOLAKI_KO = {
+IMAGOdb.timelines.NOLAKI  = {
     {
         era = "BfA",
         text = [[빛의 용사 라와니 카나에 휘하 젊은 성기사로 훈련받았다. 다자알로 전투에 참여하지 않았다.]],
@@ -886,7 +886,7 @@ IMAGOdb.timelines.NOLAKI_KO = {
     }
 }
 
-IMAGOdb.timelines.VALUNEI_KO = {
+IMAGOdb.timelines.VALUNEI  = {
     {
         era = "Ancient",
         text = [[빛의 군대에 합류해 빛벼림이 되었고 불타는 군단에 맞서 아르고스에서 싸웠다. 절친이자 지휘관 구원자 이리스카에게 성기사로 훈련받았다. 이리스카가 죽자 발루네이가 상심했다.]],
@@ -901,12 +901,12 @@ IMAGOdb.timelines.VALUNEI_KO = {
     }
 }
 
-IMAGOdb.timelines.MARIELLA_WARD_KO = {
+IMAGOdb.timelines.MARIELLA_WARD  = {
     {era = "Legion", text = "붉은돌격단을 부인하고 뒤이은 사형을 간신히 피했다. 황천빛 사원의 사제 콘클라베에 합류했다."},
     {era = "Midnight", text = "태양샘을 지키고자 실버문에 소환되어 다가오는 공허폭풍에 맞서 마법을 보태고자 성스러운 샘물 곁에 머물렀다."},
 }
 
-IMAGOdb.timelines.HADWIN_KO = {
+IMAGOdb.timelines.HADWIN  = {
     {
         era = "BfA",
         text = [[드러스트바 마녀와 싸우고자 루실 웨이크레스트 휘하 잿불 기사단에 지원했다. 빛과 연결을 느끼기 시작했다.]],
@@ -925,7 +925,7 @@ IMAGOdb.timelines.HADWIN_KO = {
     }
 }
 
-IMAGOdb.timelines.TALTHIS_KO = {
+IMAGOdb.timelines.TALTHIS  = {
     {
         era = "WC3",
         text = [[아이로 쿠엘탈라스 함락에서 살아남았다.]],
@@ -944,7 +944,7 @@ IMAGOdb.timelines.TALTHIS_KO = {
     }
 }
 
-IMAGOdb.timelines.VINDICATOR_BOROS_KO = {
+IMAGOdb.timelines.VINDICATOR_BOROS  = {
     {
         era = "TBC",
         text = [[배신자 시로나스를 물리쳐 핏빛안개 섬 드레나이 피난민이 악마 타락에 빠지지 않게 구했다. 이후 엑소다르 추락지 주변 경관 복원을 도왔다.]],
@@ -963,7 +963,7 @@ IMAGOdb.timelines.VINDICATOR_BOROS_KO = {
     }
 }
 
-IMAGOdb.timelines.GREAT_KYRON_KO = {
+IMAGOdb.timelines.GREAT_KYRON  = {
     {
         era = "Pre-TWW",
         text = [[아라시 군대 감독관으로 일했다. 카즈 알가르 사태 얼마 전 할로우폴 아라시 원정에 합류했다.]],
@@ -978,7 +978,7 @@ IMAGOdb.timelines.GREAT_KYRON_KO = {
     }
 }
 
-IMAGOdb.timelines.HIGH_PRELATE_RATA_KO = {
+IMAGOdb.timelines.HIGH_PRELATE_RATA  = {
     {
         era = "BfA",
         text = [[4차 대전쟁 때 라스타칸 왕 주요 수호자로 성직자를 이끌었다. 레잔 사후 교단이 크게 약해졌고 빛과 연결을 잃은 일원이 많았다. 라타가 탈란지 여왕 지지를 맹세하고 왕 사후 잔추리 평의회에 합류했다.]],
@@ -997,7 +997,7 @@ IMAGOdb.timelines.HIGH_PRELATE_RATA_KO = {
     }
 }
 
-IMAGOdb.timelines.SORIDORMI_KO = {
+IMAGOdb.timelines.SORIDORMI  = {
     {
         era = "Ancient",
         text = [[비늘태생 전쟁 때 원시술사와 싸웠다. 용의 혼에 자신과 노즈도르무의 정수를 불어넣고 고대 전쟁 때 청동 용군단을 대표했다.]],
@@ -1024,7 +1024,7 @@ IMAGOdb.timelines.SORIDORMI_KO = {
     }
 }
 
-IMAGOdb.timelines.QUEEN_TALANJI_KO = {
+IMAGOdb.timelines.QUEEN_TALANJI  = {
     {
         era = "Cata",
         text = [[친구 아파리와 잔달라 공주로 자랐다.]],
@@ -1051,7 +1051,7 @@ IMAGOdb.timelines.QUEEN_TALANJI_KO = {
     }
 }
 
-IMAGOdb.timelines.ROKHAN_KO = {
+IMAGOdb.timelines.ROKHAN  = {
     {
         era = "WC3",
         text = [[스랄의 새 호드에 합류해 부족과 칼림도어에 피신했다. 이후 쿨 티란이 이유 없이 오그리마를 공격하자 테라모어에서 데일린 프라우드무어 급습을 이끌었다. 렉사르가 제독 군주를 처치하는 동안 데일린 정예 병력과 싸웠다.]],
@@ -1094,7 +1094,7 @@ IMAGOdb.timelines.ROKHAN_KO = {
     }
 }
 
-IMAGOdb.timelines.ZEKHAN_KO = {
+IMAGOdb.timelines.ZEKHAN  = {
     {
         era = "Pre-BfA",
         text = [[메아리 섬에서 자랐고 아버지 헤카지가 들려주던 바로크 사울팽 같은 호드 위대한 영웅 이야기에 감명받았다.]],
@@ -1113,7 +1113,7 @@ IMAGOdb.timelines.ZEKHAN_KO = {
     }
 }
 
-IMAGOdb.timelines.HIGH_INQUISITOR_WHITEMANE_KO = {
+IMAGOdb.timelines.HIGH_INQUISITOR_WHITEMANE  = {
     {
         era = "Pre-Classic",
         text = [[로데론에서 언데드 역병에 가족이 굴하자 목격했고 스컬지로 일어나자 파괴해야 했다. 언데드 위협을 끝내고자 붉은십자군에 합류했다.]],
@@ -1144,7 +1144,7 @@ IMAGOdb.timelines.HIGH_INQUISITOR_WHITEMANE_KO = {
     }
 }
 
-IMAGOdb.timelines.WARDRUID_LOTI_KO = {
+IMAGOdb.timelines.WARDRUID_LOTI  = {
     {
         era = "Pre-BfA",
         text = [[잔달라 사냥꾼 전사의 압도 지지에 잔추리 평의회 젊은 일원으로 자리를 얻었다. 임명 뒤 제국에 드루이드교 인기가 올랐다.]],
@@ -1163,7 +1163,7 @@ IMAGOdb.timelines.WARDRUID_LOTI_KO = {
     }
 }
 
-IMAGOdb.timelines.DARION_MOGRAINE_KO = {
+IMAGOdb.timelines.DARION_MOGRAINE  = {
     {era = "WC3", text = "실버 핸드에 합류해 스컬지와의 싸움을 도왔다."},
     {era = "Classic", text = "낙스라마스를 공격하고자 은빛 여명회 도움을 받아 언데드 아버지에게서 잿불인도자를 되찾고 4인의 기사를 물리쳤다. 은빛 여명회를 구하고자 자신을 희생했고 죽음의 기사로 되살아났다."},
     {era = "WotLK", text = "아케루스 죽음의 기사 통치자가 되었다. 리치 왕 지배를 벗어나 검은칼을 시작했다. 얼음왕관과 줄드락에서 스컬지와의 전쟁을 도왔다. 얼음왕관 성채에서 리치 왕을 물리치는 데 도왔다. 볼바르 포드라곤이 새 리치 왕에 올랐음을 알았다."},
@@ -1174,7 +1174,7 @@ IMAGOdb.timelines.DARION_MOGRAINE_KO = {
     {era = "Midnight", text = "나머지 4인의 기사와 희망의 빛 예배당을 스컬지에게서 지켰다."},
 }
 
-IMAGOdb.timelines.THASSARIAN_KO = {
+IMAGOdb.timelines.THASSARIAN  = {
     {era = "WC3", text = "타사리안이 군대에 입대해 아서스 왕자를 따라 노스렌드에 가서 말가니스를 사냥했다. 그곳에서 팔릭에게 살해되어 아서스에게 죽음의 기사로 변환되었다. 스컬지 병사로 로데론과 쿠엘탈라스를 공격하도록 강요당했다."},
     {era = "Pre-WotLK", text = "타사리안이 아케루스에 보내져 희망의 빛 예배당을 공격했다. 그러나 죽음의 기사가 패했고 타사리안 본인이 아버지 유령에 설득되어 물러났다. 리치 왕 지배를 벗어나 타사리안이 스톰윈드에 여행해 바리안 린 왕을 만났고 검은칼 기사를 동맹으로 받아들였다."},
     {era = "WotLK", text = "타사리안이 노스렌드 얼라이언스에 합류해 스컬지와 싸우고 누이를 구했다. 이후 스컬지 지식을 살려 얼음왕관 전쟁 노력을 도왔고 수호를 약화해 성채 길을 여는 데 도왔다. 검은칼 기사와 함께 싸우며 리치 왕과 마주했으나 물러나야 했다."},
@@ -1185,7 +1185,7 @@ IMAGOdb.timelines.THASSARIAN_KO = {
     {era = "Midnight", text = "동부 역병지대에서 희망의 빛 예배당을 지키는 데 도왔다."},
 }
 
-IMAGOdb.timelines.GIDWIN_GOLDBRAIDS_KO = {
+IMAGOdb.timelines.GIDWIN_GOLDBRAIDS  = {
     {
         era = "Cata",
         text = [[타레나르와 피오나의 대상에 동행해 희망의 빛 예배당에서 성기사가 되고자 했다. 타레나르가 임무를 진지히 여기지 않자 홀로 싸우고자 떠났으나 붙잡혀 스컬지에게 죽음의 기사가 될 뻔했다. 구조된 뒤 친구를 용서했고 둘 다 은빛십자군에 받아들여졌다.]],
@@ -1212,7 +1212,7 @@ IMAGOdb.timelines.GIDWIN_GOLDBRAIDS_KO = {
     }
 }
 
-IMAGOdb.timelines.MEHLAR_DAWNBLADE_KO = {
+IMAGOdb.timelines.MEHLAR_DAWNBLADE  = {
     {
         era = "Pre-WC3",
         text = [[빛의 인도자 우서 휘하 실버 핸드 기사로 훈련받았다.]],
@@ -1247,7 +1247,7 @@ IMAGOdb.timelines.MEHLAR_DAWNBLADE_KO = {
     }
 }
 
-IMAGOdb.timelines.BELATH_DAWNBLADE_KO = {
+IMAGOdb.timelines.BELATH_DAWNBLADE  = {
     {
         era = "TBC",
         text = [[마르둠 침공에 참여해 불타는 군단 악마에게 잠시 붙잡혔다. 이후 동료 일리다리와 함께 마이에브 섀도송에게 갇혔다.]],
@@ -1262,7 +1262,7 @@ IMAGOdb.timelines.BELATH_DAWNBLADE_KO = {
     }
 }
 
-IMAGOdb.timelines.SUNWALKER_DEZCO_KO = {
+IMAGOdb.timelines.SUNWALKER_DEZCO  = {
     {era = "Pre-MoP", text = "가장 가까운 동맹과 여러 대륙 호드 임무에 용, 언데드, 얼라이언스 군세와 싸웠다."},
     {era = "MoP", text = "여명추적자 부족을 판다리아에 이끌고 아내와 어린 아들 하나를 잃는 비극을 견뎠다. 영원꽃 골짜기의 확고한 수호자가 되었고 마침내 가로쉬 헬스크림을 몰아내 성지 더럽힘을 막았다."},
     {era = "WoD", text = "평화를 찾아 드레노어에 여행했다. 엄청난 슬픔을 달래고자 아라코아 태양 수정 따스하고 달래는 빛 중독에 잠시 시달렸다."},
@@ -1273,7 +1273,7 @@ IMAGOdb.timelines.SUNWALKER_DEZCO_KO = {
     {era = "Midnight", text = "태양 방랑자와 동맹의 길잡이로 행동하며 빛 휘두르기가 단순 폭력보다 훨씬 중요함을 새 세대에 가르친다."},
 }
 
-IMAGOdb.timelines.AEONARA_DAWNSHADE_KO = {
+IMAGOdb.timelines.AEONARA_DAWNSHADE  = {
     {
         era = "DF",
         text = [[그림자수호단 공격에서 텔로그러스 균열의 공허 엘프 야영을 지켰다.]],
@@ -1288,7 +1288,7 @@ IMAGOdb.timelines.AEONARA_DAWNSHADE_KO = {
     }
 }
 
-IMAGOdb.timelines.TARENAR_SUNSTRIKE_KO = {
+IMAGOdb.timelines.TARENAR_SUNSTRIKE  = {
     {
         era = "Cata",
         text = [[기드윈과 피오나의 대상에 동행해 희망의 빛 예배당에서 성기사가 되고자 했다. 기드윈을 죽음의 기사가 되기 전 구해 둘 다 은빛십자군에 받아들여졌다.]],
@@ -1315,7 +1315,7 @@ IMAGOdb.timelines.TARENAR_SUNSTRIKE_KO = {
     }
 }
 
-IMAGOdb.timelines.GRAND_ARTIFICER_ROMUUL_KO = {
+IMAGOdb.timelines.GRAND_ARTIFICER_ROMUUL  = {
     {
         era = "Ancient",
         text = [[아르고스에서 기술자로 일했고 총독 하타루의 제자였다. 벨렌의 대의에 합류해 불타는 군단이 장악하자 고향을 탈출했다.]],
@@ -1338,7 +1338,7 @@ IMAGOdb.timelines.GRAND_ARTIFICER_ROMUUL_KO = {
     }
 }
 
-IMAGOdb.timelines.ALLARI_THE_SOULEATER_KO = {
+IMAGOdb.timelines.ALLARI_THE_SOULEATER  = {
     {
         era = "TBC",
         text = [[아웃랜드에서 일리단 스톰레이지에 충성을 맹세했다. 그의 명령에 살게라이트 쐐기돌 유물을 성공리에 되찾았으나 돌아오자 동료 일리다리와 마이에브 섀도송에게 붙잡혀 갇혔다.]],
@@ -1357,7 +1357,7 @@ IMAGOdb.timelines.ALLARI_THE_SOULEATER_KO = {
     }
 }
 
-IMAGOdb.timelines.DECIMUS_KO = {
+IMAGOdb.timelines.DECIMUS  = {
     {
         era = "Midnight",
         text = [[공허 엘프와 동맹을 맺어 안전한 작전 기지를 주고 공허폭풍 endeavors를 도왔다. 그 과정에 라이벌 도마나르를 편리하게 제거했다.
@@ -1366,14 +1366,14 @@ IMAGOdb.timelines.DECIMUS_KO = {
     }
 }
 
-IMAGOdb.timelines.KING_MRGL_MRGL_KO = {
+IMAGOdb.timelines.KING_MRGL_MRGL  = {
     {era = "WotLK", text = "북풍의 땅에서 D.E.H.T.A. 원정대에 합류해 파격적인 변장으로 멀록 연구를 시작했다. 멀록이 분쟁 시기 왕으로 선택했고 므글므글 왕이 무력한 부족을 지켜 왕으로 자리를 굳혔다."},
     {era = "Legion", text = "젊은 멀록 영웅 머키와 함께 높은산 늪바위 멀록을 난폭한 길에서 돌리고자 했다. 왕 도움에 머키가 새 '멀록' 부족의 더 평화로운 지도자로 자리잡을 수 있었다."},
     {era = "BfA", text = "나즈자타에서 므글므글 왕을 므글의 바베큐 주인으로 만날 수 있다. 지역 멀록만을 위한 가게다."},
     {era = "Midnight", text = "심해 멀록 공격 부족에게서 줄아만 멀록을 지킨 뒤 므글므글 왕이 멀록의 로아로 선언되었다. 숭배자가 신이자 구원자로 늪에 묶인 사원에 가두었다."},
 }
 
-IMAGOdb.timelines.MONTE_GAZLOWE_KO = {
+IMAGOdb.timelines.MONTE_GAZLOWE  = {
     {
         era = "Pre-WC3",
         text = [[언더마인에서 태어나 자란 가즈로가 환멸해 도시를 떠나 다시 돌아오지 않겠다고 맹세했다. 옛 친구 마린 노겐포거와 스팀휘들 카르텔에 합류했다.]],
@@ -1420,7 +1420,7 @@ IMAGOdb.timelines.MONTE_GAZLOWE_KO = {
     }
 }
 
-IMAGOdb.timelines.VALEERA_SANGUINAR_KO = {
+IMAGOdb.timelines.VALEERA_SANGUINAR  = {
     {
         era = "Pre-WC3",
         text = [[가족 전체가 산적에 살해되어 아이로 고아가 되었다. 거리에서 도둑으로 연명했다.]],
@@ -1461,7 +1461,7 @@ IMAGOdb.timelines.VALEERA_SANGUINAR_KO = {
     }
 }
 
-IMAGOdb.timelines.FREYA_KO = {
+IMAGOdb.timelines.FREYA  = {
     {
         era = "Ancient",
         text = [[테라잔을 물리쳐 검은 제국을 물리치는 데 도왔다. 아제로스에 식물 생명을 다시 채우고 운고로 분화구, 숄라자르 분지, 영원꽃 골짜기에서 생명 마법을 실험했다. 티탄 기록에 에메랄드의 꿈을 만들고 세계수 가니르를 심었으며 만든 동물에서 야생의 신과 로아가 진화했다고 한다. 용 위상에 힘을 불어넣는 데 도왔다.]],
@@ -1482,7 +1482,7 @@ IMAGOdb.timelines.FREYA_KO = {
     }
 }
 
-IMAGOdb.timelines.EITRIGG_KO = {
+IMAGOdb.timelines.EITRIGG  = {
     {era = "WC1", text = "옛 호드를 위해 드레나이와 싸웠고 이후 아제로스에서 스톰윈드 인간과 싸웠다."},
     {era = "WC2", text = "새 대족장 오그림 가장 신뢰하는 부관 중 하나로 자리를 지켰다. 검은바위 산 전투 뒤 호드에 대한 믿음이 무너졌다. 아이트리그가 탈영해 로데론에 은자로 숨어 인간을 피해 살았다."},
     {era = "Pre-WC3", text = "티리온 폴드링과 싸웠다. 죽일 기회가 있어도 아이트리그가 티리온의 목숨을 구했다. 성기사가 스트라솔름에서 오크 처형을 막아 빚을 갚을 명예 빚이 생겼다. 오크가 스랄의 새 호드에 합류했으나 티리온을 형제로 여기기를 계속했다."},
@@ -1497,7 +1497,7 @@ IMAGOdb.timelines.EITRIGG_KO = {
     {era = "Pre-MN", text = "마침내 로서의 아들 일원으로 지명되었고 아제로스가 마주한 위협을 논의하고자 모일 때 불려간다."}
 }
 
-IMAGOdb.timelines.THISALEE_CROW_KO = {
+IMAGOdb.timelines.THISALEE_CROW  = {
     {
         era = "Cata",
         text = [[검은 용군단과 손잡았음을 밝히자 하늘군주 옴누론 명령을 어기고 하이잘 산에서 하피를 수십 마리 싸워 처치했다. 아비아나의 알을 찾아 지켰다. 이후 불의 땅 정령과 싸우며 자신의 능력을 과대평가했고 침공 때 말퓨리온 스톰레이지 휘하 다른 드루이드와 재결집했다.]],
@@ -1532,7 +1532,7 @@ IMAGOdb.timelines.THISALEE_CROW_KO = {
     }
 }
 
-IMAGOdb.timelines.KURDRAN_WILDHAMMER_KO = {
+IMAGOdb.timelines.KURDRAN_WILDHAMMER  = {
     {era = "WC2", text = "옛 호드와 싸워 물리치는 데 도왔다. 이후 오크 위협을 영원히 처리하고자 투랄리온 원정을 따라 아웃랜드에 갔다. 아제로스를 지키고자 어둠의 문이 제대로 닫히도록 뒤에 남기로 했다."},
     {era = "TBC", text = "그림자달 골짜기에 아성을 지키고 일리단 스톰레이지와 불타는 군단에 맞서 얼라이언스 모험가를 도왔다."},
     {era = "Pre-Cata", text = "아이언포지 세 망치 평의회에 와일드해머 씨족을 잠시 대표했으나 대신 팔스타드 와일드해머에게 자리를 양보했다."},
@@ -1542,7 +1542,7 @@ IMAGOdb.timelines.KURDRAN_WILDHAMMER_KO = {
     {era = "Midnight", text = "아라토르가 아버지 투랄리온의 역사와 2차 대전쟁 역할 일부를 배우도록 도왔다. 아제로스 곳곳 모험가에게 집 밖 집인 아칸티나를 소개했다."}
 }
 
-IMAGOdb.timelines.LIRATH_WINDRUNNER_KO = {
+IMAGOdb.timelines.LIRATH_WINDRUNNER  = {
     {
         era = "Pre-WC2",
         text = [[캘타스 선스트라이더 왕자에게 왕실 음악가로 임명되었다. 부모 사후 누이 베리사와 순찰자 훈련을 시작했다.]],
@@ -1561,7 +1561,7 @@ IMAGOdb.timelines.LIRATH_WINDRUNNER_KO = {
     }
 }
 
-IMAGOdb.timelines.LORD_MAXWELL_TYROSUS_KO = {
+IMAGOdb.timelines.LORD_MAXWELL_TYROSUS  = {
     {
         era = "Pre-Classic",
         text = [[스컬지에게서 로데론을 해방하려는 알렉산드로스 모그레인 임무에 합류했다. 모그레인 사후 타이로수스가 붉은십자군의 광신적 발상에 강히 반대하고 새로 생긴 은빛 여명회에 합류해 단숨에 교단 지도자가 되었다. 이후 다리온 모그레인이 아버지 영혼을 구하도록 도왔다.]],
@@ -1592,7 +1592,7 @@ IMAGOdb.timelines.LORD_MAXWELL_TYROSUS_KO = {
     }
 }
 
-IMAGOdb.timelines.JAROD_SHADOWSONG_KO = {
+IMAGOdb.timelines.JAROD_SHADOWSONG  = {
     {
         era = "Ancient",
         text = [[고대 전쟁 때 쿠르탈로스 레이븐크레스트 휘하, 다음 데스델 스타아이 휘하 싸웠다. 계급을 올라 칼도레이 저항군 군사 지도자가 되었고 말퓨리온과 티란데마저 따랐다. 생존자 죄책감에 짓눌리고 칼도레이가 백성으로 나아가는 모습에 환멸해 전쟁 승리 뒤 아내 샬라시르와 사회를 떠났다.]],
@@ -1627,7 +1627,7 @@ IMAGOdb.timelines.JAROD_SHADOWSONG_KO = {
     }
 }
 
-IMAGOdb.timelines.MAIEV_SHADOWSONG_KO = {
+IMAGOdb.timelines.MAIEV_SHADOWSONG  = {
     {
         era = "Ancient",
         text = [[고대 전쟁에 엘룬의 사제로 싸웠다. 군단이 패한 뒤 마이에브가 일리단이 동족에 배신자라 판단되자 감시하겠다고 지원했다.]],
@@ -1678,7 +1678,7 @@ IMAGOdb.timelines.MAIEV_SHADOWSONG_KO = {
     }
 }
 
-IMAGOdb.timelines.BRANN_BRONZEBEARD_KO = {
+IMAGOdb.timelines.BRANN_BRONZEBEARD  = {
     {
         era = "WC2",
         text = [[2차 대전쟁 최후 전투까지 군대와 함께 아이언포지 공성전에 얼라이언스를 위해 싸웠다.]],
@@ -1725,7 +1725,7 @@ IMAGOdb.timelines.BRANN_BRONZEBEARD_KO = {
     }
 }
 
-IMAGOdb.timelines.NAZGRIM_KO = {
+IMAGOdb.timelines.NAZGRIM  = {
     {
         era = "Pre-WC3",
         text = [[얼라이언스에 붙잡혀 억류 수용소에 갇혔다. 호드에게 풀려난 뒤 스랄의 군대에 합류했다.]],
@@ -1760,7 +1760,7 @@ IMAGOdb.timelines.NAZGRIM_KO = {
     }
 }
 
-IMAGOdb.timelines.KOLTIRA_DEATHWEAVER_KO = {
+IMAGOdb.timelines.KOLTIRA_DEATHWEAVER  = {
     {
         era = "WC3",
         text = [[실버문 수호에 타사리안 칼날에 쓰러졌다. 죽음의 기사로 되살아나 스컬지를 위해 싸우도록 강요당했다.]],
@@ -1787,7 +1787,7 @@ IMAGOdb.timelines.KOLTIRA_DEATHWEAVER_KO = {
     }
 }
 
-IMAGOdb.timelines.THORAS_TROLLBANE_KO = {
+IMAGOdb.timelines.THORAS_TROLLBANE  = {
     {
         era = "Pre-WC2",
         text = [[알테락 왕국과 여러 전쟁에 스트롬가드 군대를 이끌었다.]],
@@ -1814,7 +1814,7 @@ IMAGOdb.timelines.THORAS_TROLLBANE_KO = {
     }
 }
 
-IMAGOdb.timelines.NEXUS_KING_SALHADAAR_KO = {
+IMAGOdb.timelines.NEXUS_KING_SALHADAAR  = {
     {
         era = "Ancient",
         text = [[카레쉬 백성의 고위 사제로 다스렸고 다가오는 공허에 대한 로커스워커 경고를 무시해 다음 일어난 일의 책임을 그에게 돌렸다. 디멘시우스가 오자 살하다르가 육신을 잃고 카레쉬가 멸망했다. 백성과 뒤틀린 황천에 피신했다.]],
@@ -1837,7 +1837,7 @@ IMAGOdb.timelines.NEXUS_KING_SALHADAAR_KO = {
     }
 }
 
-IMAGOdb.timelines.L_URA_KO = {
+IMAGOdb.timelines.L_URA  = {
     {
         era = "Ancient",
         text = [[불타는 군단에게서 벨렌의 탈출을 확보하고자 아르고스에 남았다. 킬제덴에게 패해 갇혔다.]],
@@ -1852,7 +1852,7 @@ IMAGOdb.timelines.L_URA_KO = {
     }
 }
 
-IMAGOdb.timelines.MOR_DUUN_KO = {
+IMAGOdb.timelines.MOR_DUUN  = {
     {
         era = "TWW",
         text = [[황혼의 망치 잔당으로 황혼의 칼날을 결성해 잘아타스에 봉사하겠다고 맹세했다.]],
@@ -1867,12 +1867,12 @@ IMAGOdb.timelines.MOR_DUUN_KO = {
     }
 }
 
-IMAGOdb.timelines.ZALJARRA_KO = {
+IMAGOdb.timelines.ZALJARRA  = {
     {era = "TBC", text = "어린 아이일 때 아버지 만예와 조부 줄진을 잃었다. 이후 어머니가 의식 전투에 살해되었다. 복수한 뒤 줄자라가 정당한 자리인 새 지도자가 되었다."},
     {era = "Midnight", text = "리아드린과 동맹해 하쉬에이가 되도록 도움을 받아들이기로 했다. 줄자라가 줄아만 부족을 하나로 모았고 로아 신뢰를 되찾았다. 이후 황혼의 칼날과의 전투를 이끌어 공허에게서 백성을 성공리에 지켰다."},
 }
 
-IMAGOdb.timelines.NALORAKK_KO = {
+IMAGOdb.timelines.NALORAKK  = {
     {
         era = "TBC",
         text = [[주술 군주 말라크라스가 줄진 가장 강한 전사 중 하나에 묶었다. 전사가 모험가에게 살해되자 날로라크가 다시 풀려났다.]],
@@ -1891,7 +1891,7 @@ IMAGOdb.timelines.NALORAKK_KO = {
     }
 }
 
-IMAGOdb.timelines.AKILZON_KO = {
+IMAGOdb.timelines.AKILZON  = {
     {era = "TBC", text = "주술 군주 말라크라스가 줄자라·줄잔의 아버지 만예의 몸에 묶었다. 만예가 독수리머리 신비주의자로 변신해 침공 모험가에게 쓰러졌다."},
     {era = "WotLK", text = "잔달라가 드라카리 트롤을 끝내고 힘을 위한 로아 섭취를 막는 데 도왔다."},
     {era = "Cata", text = "다시 주술 군주 말라크라스 어둠 마법에 당했다. 모험가 손에 화신이 죽자 영혼이 풀려났다."},
@@ -1899,14 +1899,14 @@ IMAGOdb.timelines.AKILZON_KO = {
     {era = "Midnight", text = "줄아만에 돌아와 잘아타스 세력에 맞서 폭풍 힘을 마음껏 풀어낸다."},
 }
 
-IMAGOdb.timelines.JANALAI_KO = {
+IMAGOdb.timelines.JANALAI  = {
     {era = "TBC", text = "주술 군주 말라크라스 손에 고통받으며 정수를 빼앗겨 아마니 가장 치명적인 도적 중 하나에 깃들었다. 줄진 몰락에 영혼이 풀려났다."},
     {era = "WotLK", text = "줄드락에서 자신의 백성에게서 드라카리 로아를 구하는 조언을 구하고자 의술사 쿠푸에게 불렸다."},
     {era = "Cata", text = "다시 주술 군주 말라크라스 공포에 당했다. 정수가 다른 아마니 용사에 깃들어 뒤틀린 화신을 만들었다. 줄진 후계자 다카라를 모험가가 물리치자 영혼이 풀려났다."},
     {era = "Midnight", text = "수십 년 침묵 뒤 잔알라이가 아마니 백성에 돌아왔다. 줄진과 말라크라스 배신이 로아를 떠나게 했고 하쉬에이 줄자라가 백성 죄를 속죄하자 돌아왔다."},
 }
 
-IMAGOdb.timelines.HALAZZI_KO = {
+IMAGOdb.timelines.HALAZZI  = {
     {
         era = "TBC",
         text = [[주술 군주 말라크라스가 정수를 훔쳐 그림자 쿠린제에 깃들이게 했다. 호드 용사가 줄진을 물리치자 영혼이 풀려났다.]],
@@ -1925,12 +1925,12 @@ IMAGOdb.timelines.HALAZZI_KO = {
     }
 }
 
-IMAGOdb.timelines.ZULJAN_KO = {
+IMAGOdb.timelines.ZULJAN  = {
     {era = "TBC", text = "어린 아이일 때 아버지 만예와 조부 줄진을 잃었다. 이후 어머니가 의식 전투에 살해되었고 누이 줄자라가 아마니 부족 지도자를 자처했다."},
     {era = "Midnight", text = "백성을 위해 빛나무 무기를 확보하고 블러드 엘프는 물론 황혼의 칼날과 싸웠다. 이후 마지못해 누이 명령을 따라 엘프와 동맹했다."},
 }
 
-IMAGOdb.timelines.LOA_SPEAKER_KINDURU_KO = {
+IMAGOdb.timelines.LOA_SPEAKER_KINDURU  = {
     {
         era = "TBC",
         text = [[줄진 패망 사망 뒤 고 형 만예의 아내 자라마 족장 조언자가 되었다. 자라마가 의식 전투에 살해되자 킨두루가 딸 줄자라를 섬기기 시작했다.]],
@@ -1941,14 +1941,14 @@ IMAGOdb.timelines.LOA_SPEAKER_KINDURU_KO = {
     }
 }
 
-IMAGOdb.timelines.FILO_KO = {
+IMAGOdb.timelines.FILO  = {
     {
         era = "Midnight",
         text = [[쌍둥이 누이 영혼과 재회하고자 찾아온 아마니 아이 칸자를 돌보았다. 필로가 의식을 준비하는 데 도운 모험가에게 힘을 빌려주었다. 아이를 건드리지 않는다면.]],
     }
 }
 
-IMAGOdb.timelines.TORUNDO_THE_GRIZZLED_KO = {
+IMAGOdb.timelines.TORUNDO_THE_GRIZZLED  = {
     {
         era = "Pre-WC1",
         text = [[순찰대 총사령관 리리사 윈드러너 휘하 원거리순찰대가 젠타마니 마을을 불태울 때 자라 그곳에 살았고 아이로 아마니자르에 피신해야 했다.]],
@@ -1963,7 +1963,7 @@ IMAGOdb.timelines.TORUNDO_THE_GRIZZLED_KO = {
     }
 }
 
-IMAGOdb.timelines.SHADRA_KO = {
+IMAGOdb.timelines.SHADRA  = {
     {
         era = "Classic",
         text = [[포세이큰이 거장 연금술사 파라넬 휘하 위더바크 부족의 강력한 무기 독에 눈독들여 자신들 혼합물에 쓰고자 했다. 내륙지에 그녀 제단에서 샤드라를 소환해 살해하고 독을 거두었다.]],
@@ -1990,7 +1990,7 @@ IMAGOdb.timelines.SHADRA_KO = {
     }
 }
 
-IMAGOdb.timelines.ELDER_HAGAR_KO = {
+IMAGOdb.timelines.ELDER_HAGAR  = {
     {
         era = "Pre-BfA",
         text = [[뿌리수호자 일상에 텔드랏실 뿌리가 갑자기 불길에 휩싸였고 하가르가 시들어가는 것을 보는 것 외 할 수 없었다. 이제 목적 없이 장로 평의회에 소굴에서 합류했다.]],
@@ -2001,7 +2001,7 @@ IMAGOdb.timelines.ELDER_HAGAR_KO = {
     }
 }
 
-IMAGOdb.timelines.AMARAKK_KO = {
+IMAGOdb.timelines.AMARAKK  = {
     {
         era = "Pre-TWW",
         text = [[술카가 되어 백성에 버림받았다. 알른의 균열에서 꿈에 태어난 괴물과 싸우기 시작했다.]],
@@ -2012,14 +2012,14 @@ IMAGOdb.timelines.AMARAKK_KO = {
     }
 }
 
-IMAGOdb.timelines.ROOTWARDEN_RUIA_KO = {
+IMAGOdb.timelines.ROOTWARDEN_RUIA  = {
     {
         era = "Midnight",
         text = [[하랄노르 마을을 덮친 빛꽃과 싸우고자 했다. 실패해 타락했고 백성 사랑이 증오로 바뀌었다. 빛감시자 루이아로 영원노래 숲에 일부러 감염을 퍼뜨려 블러드 엘프에 맞서는 무기로 썼다. 엘프와 하라티 동맹에 막혀 오르웨이나와 아제로스 용사에게 살해되었다.]],
     }
 }
 
-IMAGOdb.timelines.GARONA_HALFORCEN_KO = {
+IMAGOdb.timelines.GARONA_HALFORCEN  = {
     {
         era = "Pre-WC1",
         text = [[드레나이 포로에게서 하프 오크 하프 드레나이로 태어났다. 무자비한 칼바람 씨족에서 혼혈로 연명했고 이후 굴단에게 정신 지배당해 완전한 암살자가 되었다. 굴단에게 자신이 반인간이라 설득당해 오크가 전쟁에 나서면 스톰윈드에 침투할 이상 후보가 되었다.]],
@@ -2062,7 +2062,7 @@ IMAGOdb.timelines.GARONA_HALFORCEN_KO = {
     }
 }
 
-IMAGOdb.timelines.ZEN_TABRA_KO = {
+IMAGOdb.timelines.ZEN_TABRA  = {
     {
         era = "WotLK",
         text = [[의술사로 로아가 검은창 사회에서 물러남을 느꼈으나 배신자 잘라제인이 연결을 끊고 있음을 깨닫지 못했다. 잘라제인이 메아리 섬을 정복하자 남쪽에 피신했고 공크에게 접촉받았다. 에메랄드의 꿈에서 드루이드교를 배웠고 섬을 되찾는 싸움에 볼진과 합류했다.]],
@@ -2097,7 +2097,7 @@ IMAGOdb.timelines.ZEN_TABRA_KO = {
     }
 }
 
-IMAGOdb.timelines.REXXAR_KO = {
+IMAGOdb.timelines.REXXAR  = {
     {
         era = "WC1",
         text = [[평화주의 모크나탈 씨족이 전멸하지 않도록 블랙핸드 대족장에 충성을 맹세했다. 어둠의 문을 지나 1차 대전쟁 때 옛 호드를 위해 싸웠다.]],
@@ -2152,7 +2152,7 @@ IMAGOdb.timelines.REXXAR_KO = {
     }
 }
 
-IMAGOdb.timelines.KELSEY_STEELSPARK_KO = {
+IMAGOdb.timelines.KELSEY_STEELSPARK  = {
     {
         era = "Cata",
         text = [[민간인 변장으로 가젯잔에 주둔해 마린 노겐포거와 놈리건 사이 무역 거래 협상을 했다.]],
@@ -2171,7 +2171,7 @@ IMAGOdb.timelines.KELSEY_STEELSPARK_KO = {
     }
 }
 
-IMAGOdb.timelines.GORGONNA_KO = {
+IMAGOdb.timelines.GORGONNA  = {
     {
         era = "WC2",
         text = [[어릴 때 부모와 누이 크렌나와 함께 아제로스에 왔다. 그로마쉬 헬스크림 족장이 결과적으로 가족을 추방했다. 이후 고르고나의 부모가 인간에게 살해되었고 어린 자매가 던홀드 요새에서 자랐다.]],
@@ -2206,7 +2206,7 @@ IMAGOdb.timelines.GORGONNA_KO = {
     }
 }
 
-IMAGOdb.timelines.LILLIAN_VOSS_KO = {
+IMAGOdb.timelines.LILLIAN_VOSS  = {
     {
         era = "Pre-Cata",
         text = [[아버지 고위 사제 베네딕투스 보스 밑에 자라 붉은십자군의 효율적 살상 병기로 키워졌다. 대격변 얼마 전 릴리안이 죽어 공동묘지에 묻혔다.]],
@@ -2257,7 +2257,7 @@ IMAGOdb.timelines.LILLIAN_VOSS_KO = {
     }
 }
 
-IMAGOdb.timelines.TEHD_SHOEMAKER_KO = {
+IMAGOdb.timelines.TEHD_SHOEMAKER  = {
     {
         era = "Pre-Legion",
         text = [[불타는 군단 귀환 얼마 전 인간 흑마법사가 성기사에게 살해되었다.]],
@@ -2276,7 +2276,7 @@ IMAGOdb.timelines.TEHD_SHOEMAKER_KO = {
     }
 }
 
-IMAGOdb.timelines.TAOSHI_KO = {
+IMAGOdb.timelines.TAOSHI  = {
     {
         era = "MoP",
         text = [[탕랑 평원에서 사마귀를 막고 타란 주와 용사와 증오의 샤를 물리쳤다. 천둥왕 뇌신 세력에 맞서 천둥의 섬에서 싸웠고 싸우는 호드와 얼라이언스 모두를 도왔다.]],
@@ -2303,7 +2303,7 @@ IMAGOdb.timelines.TAOSHI_KO = {
     }
 }
 
-IMAGOdb.timelines.VANESSA_VANCLEEF_KO = {
+IMAGOdb.timelines.VANESSA_VANCLEEF  = {
     {
         era = "Classic",
         text = [[고용 모험가 손에 아버지 에드윈 밴클리프의 죽음을 목격했다. 살딘 가에 입양되어 호프라는 이름을 받았으나 씁쓸하게 남았다.]],
@@ -2334,7 +2334,7 @@ IMAGOdb.timelines.VANESSA_VANCLEEF_KO = {
     }
 }
 
-IMAGOdb.timelines.SCALECOMMANDER_AZURATHEL_KO = {
+IMAGOdb.timelines.SCALECOMMANDER_AZURATHEL  = {
     {
         era = "Ancient",
         text = [[동료 드랙티르 수호자로 일하고자 넬타리온에게 창조되었다. 용의 섬에서 검은 용군단 아성을 지키는 일을 맡았다. 라스자게스가 넬타리온이 드랙티르 정신 지배에 쓰던 티탄 유물 맹세자를 파괴하자 아주라텔이 동료와 함께 갇혔다.]],
@@ -2357,7 +2357,7 @@ IMAGOdb.timelines.SCALECOMMANDER_AZURATHEL_KO = {
     }
 }
 
-IMAGOdb.timelines.CECILIA_CLESSINGTON_KO = {
+IMAGOdb.timelines.CECILIA_CLESSINGTON  = {
     {
         era = "DF",
         text = [[아버지가 데피아스 형제단을 장악해 스톰윈드 시를 털고자 하자 바네사 밴클리프에게 볼모로 납치되었다. 도적과 친구가 되어 그녀와 SI:7이 아버지를 막고 죽이는 데 도왔다. 이름의 유일한 계승자로 백작 부인 칭호를 받고 스톰윈드 귀족원에 합류했다. 서부 몰락지대 백성을 돕고자 빵바구니 길드를 세웠다.]],
@@ -2368,7 +2368,7 @@ IMAGOdb.timelines.CECILIA_CLESSINGTON_KO = {
     }
 }
 
-IMAGOdb.timelines.MARIUS_FELBANE_KO = {
+IMAGOdb.timelines.MARIUS_FELBANE  = {
     {
         era = "TBC",
         text = [[아웃랜드에서 일리단 스톰레이지에 충성을 맹세했다. 그의 명령에 마르둠을 침공했으나 돌아오자 동료 일리다리와 마이에브 섀도송에게 붙잡혀 갇혔다.]],
@@ -2387,7 +2387,7 @@ IMAGOdb.timelines.MARIUS_FELBANE_KO = {
     }
 }
 
-IMAGOdb.timelines.FLYNN_FAIRWIND_KO = {
+IMAGOdb.timelines.FLYNN_FAIRWIND  = {
     {
         era = "Pre-Classic",
         text = [[도둑질 탓에 어머니가 공개 처형당하자 아이로 고아가 되었다. 불량배 무리에 들어가도록 강요당해 마침내 해적이 되었다.]],
@@ -2418,7 +2418,7 @@ IMAGOdb.timelines.FLYNN_FAIRWIND_KO = {
     }
 }
 
-IMAGOdb.timelines.SCALECOMMANDER_EMBERTHAL_KO = {
+IMAGOdb.timelines.SCALECOMMANDER_EMBERTHAL  = {
     {
         era = "Ancient",
         text = [[창조자 넬타리온 적에 맞서 비늘사령관으로 싸웠다. 넬타리온이 드랙티르 정신 지배에 쓰던 티탄 유물 맹세자를 라스자게스가 파괴하자 엠버탈이 동료와 함께 갇혔다.]],
@@ -2441,7 +2441,7 @@ IMAGOdb.timelines.SCALECOMMANDER_EMBERTHAL_KO = {
     }
 }
 
-IMAGOdb.timelines.WRATHION_KO = {
+IMAGOdb.timelines.WRATHION  = {
     {
         era = "Cata",
         text = [[래시온의 알이 타락한 검은 용 알과 새끼 시체를 티탄 마법으로 융합한 실험에 만들어졌다. 수천 년 첫 타락하지 않은 검은 용이었고 붉은 용군단이 맡았다. 껍질 안에서 의식이 있어 도적 용병을 고용해 라벤홀트에서 부화했다. 숨어 암살자를 보내 검은 용군단을 소탕했고 데스윙 처치를 돕기까지 했다.]],
@@ -2484,7 +2484,7 @@ IMAGOdb.timelines.WRATHION_KO = {
     }
 }
 
-IMAGOdb.timelines.TRAVARD_KO = {
+IMAGOdb.timelines.TRAVARD  = {
     {
         era = "WC3",
         text = [[로데론 스컬지 맹공에서 소수 전우와 살아남았다. 트라바드가 티르의 경비대 지도자가 되었다.]],
@@ -2503,7 +2503,7 @@ IMAGOdb.timelines.TRAVARD_KO = {
     }
 }
 
-IMAGOdb.timelines.NISHA_KO = {
+IMAGOdb.timelines.NISHA  = {
     {
         era = "BfA",
         text = [[호드 대변자를 세스락 감금에서 구했다. 신념 없는 자 야영을 파괴하던 때다. 키로가 세스락에 맞서 공세를 취하도록 설득해 대상에 대한 추가 공격을 막았다. 마침내 성공해 코르텍 황제를 처치하는 데 도왔다. 얼라이언스 공격에 맞서 볼둔을 지켰고 호드 일원이 되었다.]],
@@ -2518,7 +2518,7 @@ IMAGOdb.timelines.NISHA_KO = {
     }
 }
 
-IMAGOdb.timelines.CYRUS_CRESTFALL_KO = {
+IMAGOdb.timelines.CYRUS_CRESTFALL  = {
     {
         era = "WC2",
         text = [[2차 대전쟁 때 데일린 프라우드무어 제독 휘하 기사로 일했다. 바로크 사울팽과의 전투에서 간신히 살아남았다.]],
@@ -2537,7 +2537,7 @@ IMAGOdb.timelines.CYRUS_CRESTFALL_KO = {
     }
 }
 
-IMAGOdb.timelines.MISHA_KO = {
+IMAGOdb.timelines.MISHA  = {
     {
         era = "Pre-WC3",
         text = [[죽은 어미 곁 어린 새끼로 렉사르에게 발견되었다. 렉사르가 미샤라 이름 지었고 새 친구를 따라다니기 시작했다.]],
@@ -2576,7 +2576,7 @@ IMAGOdb.timelines.MISHA_KO = {
     }
 }
 
-IMAGOdb.timelines.LORD_DARIUS_CROWLEY_KO = {
+IMAGOdb.timelines.LORD_DARIUS_CROWLEY  = {
     {
         era = "WC2",
         text = [[겐 그레이메인 왕을 설득해 새로 생긴 로데론 동맹 돕고자 길니아스 병력을 오크 호드에 맞서 보냈다. 전쟁 뒤 길니아스가 동맹을 떠나는 데 강히 반대했다.]],
@@ -2611,11 +2611,11 @@ IMAGOdb.timelines.LORD_DARIUS_CROWLEY_KO = {
     }
 }
 
-IMAGOdb.timelines.KHADGAR_KO = {
+IMAGOdb.timelines.KHADGAR  = {
     {era = "TWW", text = [[잘아타스의 달라란 파괴에 불구가 되어 다리를 쓰지 못하게 되었다. 알레리아가 검은 심장에 손상을 입히자 풀려났다. 안두인 린 덕에 회복했다. 돈 섬에서 달라란 전몰 마법사를 기렸다.]]},
 }
 
-IMAGOdb.timelines.MAGNI_BRONZEBEARD_KO = {
+IMAGOdb.timelines.MAGNI_BRONZEBEARD  = {
     {
         era = "Pre-WC2",
         text = [[삼형제 중 장남으로 태어난 마그니 왕자는 아이언포지의 왕이 되기를 바라지 않았다. 그럼에도 의무를 다했고 백성에게 존경받고 사랑받았다. 에이메아와 결혼해 딸을 낳았다. 마그니는 계승자로 딸보다 아들을 바랐다.]],

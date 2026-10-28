@@ -435,20 +435,20 @@ IMAGOdb.eras["midnight"].keyFigures = {
 -- ============================================================
 -- 내부 전쟁 (전체)
 -- ============================================================
-IMAGOdb.eras["the_war_within"].name       = "월드 오브 워크래프트: 내부 전쟁"
-IMAGOdb.eras["the_war_within"].region     = "카즈 알가르"
-IMAGOdb.eras["the_war_within"].antagonist = "잘아타스, 공허의 전령"
-IMAGOdb.eras["the_war_within"].conflict   = "광휘의 노래 경고"
+IMAGOdb.eras["tww"].name       = "월드 오브 워크래프트: 내부 전쟁"
+IMAGOdb.eras["tww"].region     = "카즈 알가르"
+IMAGOdb.eras["tww"].antagonist = "잘아타스, 공허의 전령"
+IMAGOdb.eras["tww"].conflict   = "광휘의 노래 경고"
 
 -- TAB 1: 개요
-IMAGOdb.eras["the_war_within"].summary =
+IMAGOdb.eras["tww"].summary =
     "광휘의 노래가 아제로스 곳곳에 울려 용사를 외딴 카즈 알가르 해안으로 " ..
     "부른다. 그곳 고대 토석인 도시 도르노갈 아래에서 잘아타스, 공허의 전령이 " ..
     "심연에 무시무시한 군세를 모은다. 신비한 검은 심장이 그녀 손에 있고, " ..
     "아제로스의 용사가 동맹과 함께 그녀의 계획이 결실을 맺기 전에 유물을 " ..
     "빼앗고자 대지의 깊은 곳으로 뒤쫓는다."
 
-IMAGOdb.eras["the_war_within"].fastFacts = {
+IMAGOdb.eras["tww"].fastFacts = {
     bigQuestion  = "신비한 계획이 결실을 맺기 전에 잘아타스를 막을 수 있는가?",
     cosmicForces = "우주 균형을 무너뜨리려는 공허",
     casualties   = "- 렌지크 \"칼날\": 더 나은 언더마인을 위해 목숨을 바침\n- 로커스워커: 잘아타스에게 배신당해 살해됨\n- 재스터 갤리윅스: 언더마인 고블린이 폭정에 봉기한 뒤 죽음",
@@ -456,7 +456,7 @@ IMAGOdb.eras["the_war_within"].fastFacts = {
 }
 
 -- TAB 2: 캠페인 & 지역
-IMAGOdb.eras["the_war_within"].campaigns = {
+IMAGOdb.eras["tww"].campaigns = {
     {
         heading      = "안녕, 마법의 도시",
         zoneName     = "아제로스의 환영",
@@ -635,7 +635,7 @@ IMAGOdb.eras["the_war_within"].campaigns = {
 }
 
 -- TAB 3: 패치
-IMAGOdb.eras["the_war_within"].patches = {
+IMAGOdb.eras["tww"].patches = {
     {
         version  = "11.0.7",
         title    = "사이렌 섬",
@@ -781,7 +781,7 @@ IMAGOdb.eras["the_war_within"].patches = {
 }
 
 -- TAB 4: 주요 인물
-IMAGOdb.eras["the_war_within"].keyFigures = {
+IMAGOdb.eras["tww"].keyFigures = {
     { slug="alleria_windrunner_tww", arcLabel="집착한 사냥꾼",       blurb="알레리아가 카즈 알가르를 넘어 잘아타스를 사냥했다. 복수심이 위험한 집착에 가까워 자신과 동맹을 위태롭게 했다." },
     { slug="xal_atath_tww",           arcLabel="전령",             blurb="전령이 용사를 거듭 지연시키며 여러 에너지원으로 검은 심장을 체계적으로 충전했다. 알레리아를 직접 공격하지 않았고 패배를 궁극 승리로 바꾸었다." },
     { slug="anduin_wrynn_tww",       arcLabel="깨어졌다 다시 벼려지다",     blurb="어둠땅 전쟁 사건 뒤 깨어진 남자로 시작했으나 마침내 빛과 자신에 대한 믿음을 되찾았다." },
@@ -794,26 +794,26 @@ IMAGOdb.eras["the_war_within"].keyFigures = {
 -- ============================================================
 -- 용군단 — 스텁
 -- ============================================================
-IMAGOdb.eras["dragonflight"].name       = "용군단"
-IMAGOdb.eras["dragonflight"].region     = "용의 섬"
-IMAGOdb.eras["dragonflight"].antagonist = "피락 / 화신"
-IMAGOdb.eras["dragonflight"].conflict   = "용의 섬의 재각성"
+IMAGOdb.eras["df"].name       = "용군단"
+IMAGOdb.eras["df"].region     = "용의 섬"
+IMAGOdb.eras["df"].antagonist = "피락 / 화신"
+IMAGOdb.eras["df"].conflict   = "용의 섬의 재각성"
 
 -- ============================================================
 -- 어둠땅 — 스텁
 -- ============================================================
-IMAGOdb.eras["shadowlands"].name       = "어둠땅"
-IMAGOdb.eras["shadowlands"].region     = "어둠땅"
-IMAGOdb.eras["shadowlands"].antagonist = "간수 (조바알)"
-IMAGOdb.eras["shadowlands"].conflict   = "풀려난 죽음"
+IMAGOdb.eras["sl"].name       = "어둠땅"
+IMAGOdb.eras["sl"].region     = "어둠땅"
+IMAGOdb.eras["sl"].antagonist = "간수 (조바알)"
+IMAGOdb.eras["sl"].conflict   = "풀려난 죽음"
 
 -- ============================================================
 -- 격전의 아제로스 — 스텁
 -- ============================================================
-IMAGOdb.eras["battle_for_azeroth"].name       = "격전의 아제로스"
-IMAGOdb.eras["battle_for_azeroth"].region     = "쿨 티라스 & 잔다라"
-IMAGOdb.eras["battle_for_azeroth"].antagonist = "타락자 느조스"
-IMAGOdb.eras["battle_for_azeroth"].conflict   = "얼라이언스 대 호드 — 그리고 고대 신의 귀환"
+IMAGOdb.eras["bfa"].name       = "격전의 아제로스"
+IMAGOdb.eras["bfa"].region     = "쿨 티라스 & 잔다라"
+IMAGOdb.eras["bfa"].antagonist = "타락자 느조스"
+IMAGOdb.eras["bfa"].conflict   = "얼라이언스 대 호드 — 그리고 고대 신의 귀환"
 
 -- ============================================================
 -- 군단 — 스텁
@@ -826,42 +826,42 @@ IMAGOdb.eras["legion"].conflict   = "불타는 군단의 3차 침공"
 -- ============================================================
 -- 드레노어의 전쟁군주 — 스텁
 -- ============================================================
-IMAGOdb.eras["warlords_of_draenor"].name       = "드레노어의 전쟁군주"
-IMAGOdb.eras["warlords_of_draenor"].region     = "드레노어 (평행세계)"
-IMAGOdb.eras["warlords_of_draenor"].antagonist = "굴단 / 강철 호드"
-IMAGOdb.eras["warlords_of_draenor"].conflict   = "강철 호드의 성전"
+IMAGOdb.eras["wod"].name       = "드레노어의 전쟁군주"
+IMAGOdb.eras["wod"].region     = "드레노어 (평행세계)"
+IMAGOdb.eras["wod"].antagonist = "굴단 / 강철 호드"
+IMAGOdb.eras["wod"].conflict   = "강철 호드의 성전"
 
 -- ============================================================
 -- 판다리아의 안개 — 스텁
 -- ============================================================
-IMAGOdb.eras["mists_of_pandaria"].name       = "판다리아의 안개"
-IMAGOdb.eras["mists_of_pandaria"].region     = "판다리아"
-IMAGOdb.eras["mists_of_pandaria"].antagonist = "가로쉬 헬스크림 / 샤"
-IMAGOdb.eras["mists_of_pandaria"].conflict   = "판다리아의 영혼을 건 전쟁"
+IMAGOdb.eras["mop"].name       = "판다리아의 안개"
+IMAGOdb.eras["mop"].region     = "판다리아"
+IMAGOdb.eras["mop"].antagonist = "가로쉬 헬스크림 / 샤"
+IMAGOdb.eras["mop"].conflict   = "판다리아의 영혼을 건 전쟁"
 
 -- ============================================================
 -- 대격변 — 스텁
 -- ============================================================
-IMAGOdb.eras["cataclysm"].name       = "대격변"
-IMAGOdb.eras["cataclysm"].region     = "아제로스 (산산조각)"
-IMAGOdb.eras["cataclysm"].antagonist = "파괴자 데스윙"
-IMAGOdb.eras["cataclysm"].conflict   = "세계의 붕괴"
+IMAGOdb.eras["cata"].name       = "대격변"
+IMAGOdb.eras["cata"].region     = "아제로스 (산산조각)"
+IMAGOdb.eras["cata"].antagonist = "파괴자 데스윙"
+IMAGOdb.eras["cata"].conflict   = "세계의 붕괴"
 
 -- ============================================================
 -- 리치 왕의 분노 — 스텁
 -- ============================================================
-IMAGOdb.eras["wrath_of_the_lich_king"].name       = "리치 왕의 분노"
-IMAGOdb.eras["wrath_of_the_lich_king"].region     = "노스렌드"
-IMAGOdb.eras["wrath_of_the_lich_king"].antagonist = "리치 왕 아서스 메네실"
-IMAGOdb.eras["wrath_of_the_lich_king"].conflict   = "스컬지와의 전쟁"
+IMAGOdb.eras["wotlk"].name       = "리치 왕의 분노"
+IMAGOdb.eras["wotlk"].region     = "노스렌드"
+IMAGOdb.eras["wotlk"].antagonist = "리치 왕 아서스 메네실"
+IMAGOdb.eras["wotlk"].conflict   = "스컬지와의 전쟁"
 
 -- ============================================================
 -- 불타는 성전 — 스텁
 -- ============================================================
-IMAGOdb.eras["the_burning_crusade"].name       = "불타는 성전"
-IMAGOdb.eras["the_burning_crusade"].region     = "아웃랜드"
-IMAGOdb.eras["the_burning_crusade"].antagonist = "일리단 스톰레이지 / 킬제덴"
-IMAGOdb.eras["the_burning_crusade"].conflict   = "어둠의 문의 재개방"
+IMAGOdb.eras["tbc"].name       = "불타는 성전"
+IMAGOdb.eras["tbc"].region     = "아웃랜드"
+IMAGOdb.eras["tbc"].antagonist = "일리단 스톰레이지 / 킬제덴"
+IMAGOdb.eras["tbc"].conflict   = "어둠의 문의 재개방"
 
 -- ============================================================
 -- 클래식 — 스텁

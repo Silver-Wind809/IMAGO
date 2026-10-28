@@ -17,7 +17,7 @@ IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["alleria_windrunner_tww"].lore = [[아제로�
 불타는 군단과 싸우며 알레리아는 공허에서 무기를 찾았다. 쓰러진 나루 루라가 깃들어 이제 아제로스의 선을 위해 어둠 힘을 휘두른다. 언제나 광기에 빠질 직전, 끊임없는 속삭임이 마음을 습격하는 가운데 알레리아는 이제 잘아타스 사냥에 마음을 정했다. 그 추적을 이어가고자 옛 친구 카드가와 함께 달라란에 합류했다.]]
 IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["alleria_windrunner_tww"].zones = {"달라란", "돈 섬", "도르노갈", "할로우폴", "아즈카헤트", "언더마인", "카레쉬"}
 -- 출처 유지
-IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["alleria_windrunner_tww"].timeline = IMAGOdb.timelines.ALLERIA_WINDRUNNER_KO
+IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["alleria_windrunner_tww"].timeline = IMAGOdb.timelines.ALLERIA_WINDRUNNER 
 
 -- ANDUIN WRYNN --
 IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["anduin_wrynn_tww"].name = "안두인 린"
@@ -30,7 +30,7 @@ IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["anduin_wrynn_tww"].lore = [[지배. 그 단�
 5년이 흘렀으나 시간이 안두인을 치유하지 못했다. 더는 빛을 부르지 못하고 여전히 무너지고 낙담한 채 광휘의 노래를 듣기 시작했다. 언제나처럼 옳은 일을 하고 도움이 필요한 이를 돕고자 하리라. 그러나 자신을 믿지 못하는데 어떻게 남에게 믿음을 불어넣겠는가?]]
 IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["anduin_wrynn_tww"].zones = {"실리더스", "달라란", "도르노갈", "돈 섬", "할로우폴", "아즈카헤트"}
 -- 출처 유지
-IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["anduin_wrynn_tww"].timeline = IMAGOdb.timelines.ANDUIN_WRYNN_KO
+IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["anduin_wrynn_tww"].timeline = IMAGOdb.timelines.ANDUIN_WRYNN 
 
 -- MAGNI BRONZEBEARD --
 IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["magni_bronzebeard_tww"].name = "마그니 브론즈비어드"
@@ -43,7 +43,7 @@ IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["magni_bronzebeard_tww"].lore = [[불타는 �
 늙은 드워프는 대변자로서도 그 전 왕으로서도 언제나 임무를 진지하게 여겼다. 너무 진지해 가족을 소홀히 할 정도였다. 유일한 딸 모이라와 겨우 말을 트는 사이지만 이제 손자 다그란 2세가 마땅히 누릴 할아버지가 되어 속죄하고자 한다. 무엇보다 마그니는 두 번째 기회를 간절히 바란다.]]
 IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["magni_bronzebeard_tww"].zones = {"타나리스", "달라란", "도르노갈", "돈 섬", "울리는 심연"}
 -- 출처 유지
-IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["magni_bronzebeard_tww"].timeline = IMAGOdb.timelines.MAGNI_BRONZEBEARD_KO
+IMAGOdb.npcs.CAT_DALARAN_SURVIVORS["magni_bronzebeard_tww"].timeline = IMAGOdb.timelines.MAGNI_BRONZEBEARD 
 
 -- === CAT_KHAZ_ALGAR_NATIVES ===
 
@@ -58,7 +58,7 @@ IMAGOdb.npcs.CAT_HALLOWFALL_ARATHI["faerin_lothar_tww"].lore = [[할로우폴 �
 도착의 추락에 눈과 팔을 잃었으나 정신까지 잃지 않았다. 신성한 불꽃에 대한 파에린의 믿음은 여전히 밝게 타오르고, 할로우폴과 아즈카헤트의 어둠에 흔들림 없는 낙관으로 맞선다.]]
 IMAGOdb.npcs.CAT_HALLOWFALL_ARATHI["faerin_lothar_tww"].zones = {"할로우폴", "아즈카헤트", "도르노갈", "아라시 고원"}
 -- 출처 유지
-IMAGOdb.npcs.CAT_HALLOWFALL_ARATHI["faerin_lothar_tww"].timeline = IMAGOdb.timelines.FAERIN_LOTHAR_KO
+IMAGOdb.npcs.CAT_HALLOWFALL_ARATHI["faerin_lothar_tww"].timeline = IMAGOdb.timelines.FAERIN_LOTHAR 
 
 -- === CAT_SEVERED_THREADS ===
 
@@ -77,7 +77,7 @@ IMAGOdb.npcs.CAT_XALATATHS_FORCES["xal_atath_tww"].lore = [[그녀의 미소는 
 잘아타스의 큰 계획이 궁극에 무엇인지 여전히 수수께끼고 기원조차 모호함에 싸였다. 그러나 그녀가 움직일 때마다 두 진실이 더욱 분명해졌다. 잘아타스는 우리 편이 아니며 언제나 한 발 앞서 있다.]]
 IMAGOdb.npcs.CAT_XALATATHS_FORCES["xal_atath_tww"].zones = {"아즈카헤트", "카레쉬", "타자베쉬", "마나용광로 오메가"}
 -- 출처 유지
-IMAGOdb.npcs.CAT_XALATATHS_FORCES["xal_atath_tww"].timeline = IMAGOdb.timelines.XAL_ATATH_KO
+IMAGOdb.npcs.CAT_XALATATHS_FORCES["xal_atath_tww"].timeline = IMAGOdb.timelines.XAL_ATATH 
 
 -- === CAT_AZEROTHS_ARMIES ===
 
@@ -98,4 +98,4 @@ IMAGOdb.npcs.CAT_NEUTRAL["orweyna_tww"].lore = [[아제로스에서 본 적 없�
 마음이 착하고 영웅의 결의에 이끌리는 듯하나 출신과 속셈을 비밀에 싸고 있다. 그러나 한 가지는 확실하다. 이 싸움에서 그녀는 공허 편이 아니다.]]
 IMAGOdb.npcs.CAT_NEUTRAL["orweyna_tww"].zones = {"아즈카헤트", "울리는 심연", "언더마인", "도르노갈"}
 -- 출처 유지
-IMAGOdb.npcs.CAT_NEUTRAL["orweyna_tww"].timeline = IMAGOdb.timelines.ORWEYNA_KO
+IMAGOdb.npcs.CAT_NEUTRAL["orweyna_tww"].timeline = IMAGOdb.timelines.ORWEYNA 
